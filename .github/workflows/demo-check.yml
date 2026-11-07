@@ -1,0 +1,29 @@
+name: Demo check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  demo-smoke:
+    name: Demo / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-24.04, windows-latest]
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check command help without third-party packages
+        run: python -S code/demo_sim.py --help
+      - name: Run teaching demo
+        run: python -S code/demo_sim.py --cycles 1500
+      - name: Run teaching benchmark
+        run: python -S code/demo_sim.py --bench 20 --cycles 600
