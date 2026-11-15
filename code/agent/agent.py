@@ -66,7 +66,7 @@ class MotionConfig:
     """
 
     walk_speed: float = 0.55          # 最大前进速度（m/s）
-    turn_speed: float = 90.0          # 最大转身速度（度/s）
+    turn_speed: float = 75.0          # 最大转身速度（度/s）
     ydof_speed: float = 0.30          # 侧向移动速度（m/s）
     kick_range: float = 0.65          # 进入这个距离就可以踢
     kick_power: float = 1.0           # 踢球力度 0~1
