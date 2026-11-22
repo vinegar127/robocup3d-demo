@@ -68,7 +68,7 @@ class MotionConfig:
     walk_speed: float = 0.90          # 最大前进速度（m/s）
     turn_speed: float = 90.0          # 最大转身速度（度/s）
     ydof_speed: float = 0.30          # 侧向移动速度（m/s）
-    kick_range: float = 0.75          # 进入这个距离就可以踢
+    kick_range: float = 0.72          # 感知距离门槛，给仿真的 0.75 m 触球半径留余量
     kick_backoff: float = 0.45        # 踢球点站在球后方多远（沿「球->对方球门」连线）
     kick_power: float = 1.0           # 踢球力度 0~1
     align_tolerance: float = 8.0      # 对准目标的容差（度）
@@ -297,6 +297,7 @@ class PlayerAgent:
         # 「球最后出现在哪」——这是定位/跟踪的最简版本。
         # 真实队伍用卡尔曼滤波维护一个 ball belief，这里用一个 (x, y, 时间) 三元组。
         self.ball_memory: Optional[Tuple[float, float, float]] = None
+        self._kick_ball_sample: Optional[Tuple[float, float, int]] = None
         self.search_target: Optional[Tuple[float, float]] = None
 
         # 队友广播来的信息：{player_id: (ball_x, ball_y, 时间戳)}
@@ -333,6 +334,7 @@ class PlayerAgent:
 
         # 5) 状态转移
         new_state = self._decide_state(p, sit, dt)
+        new_state = self._confirm_kick_entry(p, sit, new_state)
         if new_state != self.state:
             # 离开 KICK 时把踢球动作复位：球飞走后球员几乎总在动作播完前就离开了 KICK，
             # 不复位会导致下一脚从上次的残余相位接着播、并且冷却时间被绕过。
@@ -458,6 +460,31 @@ class PlayerAgent:
         if self.kick_cooldown > 0:
             return BehaviorState.ALIGN
         return BehaviorState.KICK
+
+    def _confirm_kick_entry(
+        self, p: Percept, sit: Situation, state: BehaviorState
+    ) -> BehaviorState:
+        """用相邻的可见球观测复核出脚距离，避免单帧低估球距。"""
+        previous = self._kick_ball_sample
+        self._kick_ball_sample = None
+        if p.play_mode != "PlayOn" or not sit.ball_visible or self.ball_memory is None:
+            return state
+
+        x, y, _ = self.ball_memory
+        self._kick_ball_sample = (x, y, p.cycle)
+        if (
+            state == BehaviorState.KICK
+            and not self.kick.active
+            and previous is not None
+            and previous[2] == p.cycle - 1
+        ):
+            # 在世界坐标下平均球位置，避免把这两帧之间的自身移动或转身算进球的位置。
+            ball_x = (x + previous[0]) * 0.5
+            ball_y = (y + previous[1]) * 0.5
+            distance = math.hypot(ball_x - self.est_pos[0], ball_y - self.est_pos[1])
+            if distance > self.cfg.kick_range:
+                return BehaviorState.APPROACH
+        return state
 
     def _kick_direction(self, p: Percept, sit: Situation) -> float:
         """

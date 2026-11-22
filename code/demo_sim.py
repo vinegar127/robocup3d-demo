@@ -134,6 +134,8 @@ class Robot:
     # 统计数据
     kicks: int = 0
     distance: float = 0.0
+    successful_kicks: int = 0
+    last_successful_attempt: int = 0
 
 
 @dataclass
@@ -440,6 +442,10 @@ class MiniSim:
                 self.ball.vy = speed * math.sin(aim)
                 self.ball.vz = 1.2 * power
                 robot.kicks += 1
+                # 一个动作跨多个周期，首次触球才算一次有效动作。
+                if robot.last_successful_attempt != ag.stats.kicks:
+                    robot.successful_kicks += 1
+                    robot.last_successful_attempt = ag.stats.kicks
                 self.state.events.append(
                     f"t={self.state.time:.1f} 球员{robot.player_id} 射门 "
                     f"球速={speed:.1f}m/s"
@@ -640,17 +646,16 @@ def run_single(cycles: int, render: bool, verbose: bool):
               f"(>1 表示比真实时间跑得快)")
 
     print("\n 各球员统计：")
-    print(f" {'球员':<6}{'踢球次数':>10}{'空踢次数':>10}{'行走距离(m)':>14}"
+    print(f" {'球员':<6}{'射门次数':>10}{'有效动作':>10}{'空踢次数':>10}{'行走距离(m)':>14}"
           f"{'摔倒次数':>10}{'状态切换':>10}")
-    print(" " + "-" * 62)
+    print(" " + "-" * 72)
     own = [r for r in sim.robots if r.team == "own"]
     for r in own:
         if r.agent:
             s = r.agent.stats
-            # 空踢 = 进入了踢球动作、但仿真没有判定成射门
-            # （球不在 0.75 m 内，或不在身体正前方 40° 以内）
-            whiff = max(0, s.kicks - r.kicks)
-            print(f" {r.player_id:<6}{r.kicks:>10}{whiff:>10}{r.distance:>14.2f}"
+            whiff = s.kicks - r.successful_kicks
+            print(f" {r.player_id:<6}{r.kicks:>10}{r.successful_kicks:>10}"
+                  f"{whiff:>10}{r.distance:>14.2f}"
                   f"{s.falls:>10}{s.state_changes:>10}")
 
     # 各状态耗时：AgentStats.time_in_state 本来就按状态累计了时间，
@@ -693,10 +698,14 @@ def run_bench(n: int, cycles: int):
           f"{'耗时(s)':>10}")
     print(" " + "-" * 52)
     totals = {"own": 0, "opp": 0, "shots": 0, "elapsed": 0.0}
+    attempts = successful_kicks = 0
     for i in range(n):
         sim = MiniSim(players_per_team=3, seed=100 + i)
         el = sim.run(cycles)
-        shots = sum(r.kicks for r in sim.robots if r.team == "own")
+        own = [r for r in sim.robots if r.team == "own"]
+        shots = sum(r.kicks for r in own)
+        attempts += sum(r.agent.stats.kicks for r in own if r.agent)
+        successful_kicks += sum(r.successful_kicks for r in own)
         print(f" {i+1:<6}{sim.state.score_own:>4}:{sim.state.score_opp:<5}"
               f"{shots:>12}{sum(r.kicks for r in sim.robots if r.team=='opp'):>12}"
               f"{el:>10.2f}")
@@ -709,6 +718,10 @@ def run_bench(n: int, cycles: int):
           f"{'':>12}{totals['elapsed']:>10.2f}")
     print(f"\n 场均进球 {totals['own']/n:.2f} : {totals['opp']/n:.2f}，"
           f"场均射门 {totals['shots']/n:.1f} 次")
+    print(f" 踢球动作 {attempts} 次，有效动作 {successful_kicks} 次，"
+          f"空踢 {attempts - successful_kicks} 次")
+    if successful_kicks:
+        print(f" 有效动作进球转化率 {totals['own'] / successful_kicks:.1%}")
     print("\n 这个数字就是你的「基线（baseline）」。")
     print(" 以后你改了 agent 逻辑，就再跑一次 bench 看有没有变好 ——")
     print(" 这就是 RoboCup 开发的标准工作方式。")
