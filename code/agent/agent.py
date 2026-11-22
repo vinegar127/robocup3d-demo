@@ -468,21 +468,28 @@ class PlayerAgent:
         这就是「战术」要解决的问题，也是论文里 set play / formation 的内容。
         """
         gx, gy = Field.opponent_goal(self.team_side)
-        # 我在场上的位置 + 球相对我的位置 = 球的绝对位置
-        ball_local = self._ball_local(sit)
-        bx = self.est_pos[0] + ball_local[0]
-        by = self.est_pos[1] + ball_local[1]
+        # 球在场上的绝对位置（已含自身朝向的旋转）
+        bx, by = self._ball_world(sit)
         # 朝球门方向
         return math.degrees(math.atan2(gy - by, gx - bx))
 
     def _ball_local(self, sit: Situation) -> Tuple[float, float]:
+        """球在本体坐标系下的位置（x=正前方，y=左侧）。"""
         a = math.radians(sit.ball_azimuth)
         return (sit.ball_dist * math.cos(a), sit.ball_dist * math.sin(a))
 
     def _ball_world(self, sit: Situation) -> Tuple[float, float]:
-        """把「球相对我」换算成球在场上的绝对坐标。"""
-        lx, ly = self._ball_local(sit)
-        return (self.est_pos[0] + lx, self.est_pos[1] + ly)
+        """
+        把「球相对我」换算成球在场上的绝对坐标。
+
+        注意 `Percept` 里的方位角是**本体坐标**（0 = 正前方，见 core.py 的 ObjectObs），
+        所以换算时必须把自身朝向加回去，否则机器人一转圈球的绝对坐标就错了。
+        """
+        a = math.radians(self.est_yaw + sit.ball_azimuth)
+        return (
+            self.est_pos[0] + sit.ball_dist * math.cos(a),
+            self.est_pos[1] + sit.ball_dist * math.sin(a),
+        )
 
     def _kick_spot(self, sit: Situation) -> Tuple[float, float]:
         """
@@ -589,11 +596,17 @@ class PlayerAgent:
     def _do_align(self, p: Percept, sit: Situation, dt: float) -> Command:
         """
         对准：先站到「球的后方」（球与对方球门连线上、球后 kick_backoff 米），
-        再把身体转到球门方向。这一步做不好，KICK 就踢飞 —— 这是新手队伍最常见的失分点。
+        再把**球转到正前方**。
+
+        为什么转向目标是「让球居中」而不是「朝向球门」？
+        因为能否踢球看的是球在不在身前（`_apply_command` 要求朝向偏差 < 40°，
+        `_decide_state` 用 align_tolerance=8° 判断）。如果我正好站在球后连线上，
+        这两个目标是同一个方向；但只要有横向偏差，转向球门就永远让球停在偏角上，
+        状态机会一直卡在 ALIGN 里踢不出去（实测某场卡了 16.8 s）。
+        转向球则一定收敛：方位角单调趋近 0。
         """
-        target = self._kick_direction(p, sit)
-        err = TurnPrimitive._wrap(target - self.est_yaw)
-        # 转向目标角度
+        # 转向目标 = 把球转到正前方（ball_azimuth 就是球相对我的方位）
+        err = sit.ball_azimuth
         w = max(-self.cfg.turn_speed, min(self.cfg.turn_speed, err * 3.0))
 
         # 先到位：算踢球点，没站上去就走过去
@@ -646,7 +659,7 @@ class PlayerAgent:
         这就是 formation（队形）问题：每个球员具体站哪儿？
         """
         # 简单策略：站在球和我方球门连线的中间偏前位置
-        bx, by = self.est_pos[0] + self._ball_local(sit)[0], self.est_pos[1] + self._ball_local(sit)[1]
+        bx, by = self._ball_world(sit)
         ox, oy = Field.own_goal(self.team_side)
         tx = bx * 0.65 + ox * 0.35
         ty = by * 0.65 + oy * 0.35 + (1.5 if self.id % 2 == 0 else -1.5)
