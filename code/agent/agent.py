@@ -202,6 +202,11 @@ class KickPrimitive:
         self.elapsed = 0.0
         self.active = True
 
+    def stop(self):
+        """被打断时复位：下次踢球必须从第 0 相位重新播，而不是接着上一脚的动作。"""
+        self.elapsed = 0.0
+        self.active = False
+
     def step(self, dt: float) -> Optional[Dict[str, float]]:
         if not self.active:
             return None
@@ -329,6 +334,10 @@ class PlayerAgent:
         # 5) 状态转移
         new_state = self._decide_state(p, sit, dt)
         if new_state != self.state:
+            # 离开 KICK 时把踢球动作复位：球飞走后球员几乎总在动作播完前就离开了 KICK，
+            # 不复位会导致下一脚从上次的残余相位接着播、并且冷却时间被绕过。
+            if self.state == BehaviorState.KICK:
+                self.kick.stop()
             self.stats.state_changes += 1
             self.prev_state = self.state
             self.state = new_state
