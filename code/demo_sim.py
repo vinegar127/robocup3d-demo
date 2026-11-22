@@ -640,15 +640,36 @@ def run_single(cycles: int, render: bool, verbose: bool):
               f"(>1 表示比真实时间跑得快)")
 
     print("\n 各球员统计：")
-    print(f" {'球员':<6}{'踢球次数':>10}{'行走距离(m)':>14}{'摔倒次数':>10}"
-          f"{'状态切换':>10}")
-    print(" " + "-" * 52)
+    print(f" {'球员':<6}{'踢球次数':>10}{'空踢次数':>10}{'行走距离(m)':>14}"
+          f"{'摔倒次数':>10}{'状态切换':>10}")
+    print(" " + "-" * 62)
     own = [r for r in sim.robots if r.team == "own"]
     for r in own:
         if r.agent:
             s = r.agent.stats
-            print(f" {r.player_id:<6}{r.kicks:>10}{r.distance:>14.2f}"
+            # 空踢 = 进入了踢球动作、但仿真没有判定成射门
+            # （球不在 0.75 m 内，或不在身体正前方 40° 以内）
+            whiff = max(0, s.kicks - r.kicks)
+            print(f" {r.player_id:<6}{r.kicks:>10}{whiff:>10}{r.distance:>14.2f}"
                   f"{s.falls:>10}{s.state_changes:>10}")
+
+    # 各状态耗时：AgentStats.time_in_state 本来就按状态累计了时间，
+    # 只是以前没有打印出来。加上它以后，「状态机是不是卡在某个状态里」
+    # 一眼就能看出来，不用再靠状态切换次数猜。
+    print("\n 状态耗时统计（秒）：")
+    cols = [
+        ("search", "找球"), ("approach", "接近"), ("align", "对准"),
+        ("kick", "踢球"), ("support", "接应"), ("return_home", "回位"),
+        ("stand_up", "起身"),
+    ]
+    header = f" {'球员':<6}" + "".join(f"{label:>9}" for _, label in cols)
+    print(header)
+    print(" " + "-" * (len(header) - 2))
+    for r in own:
+        if r.agent:
+            s = r.agent.stats
+            cells = "".join(f"{s.time_in_state.get(key, 0.0):>9.2f}" for key, _ in cols)
+            print(f" {r.player_id:<6}{cells}")
 
     if sim.state.events:
         print(f"\n 关键事件（最多显示 15 条，共 {len(sim.state.events)} 条）：")

@@ -65,10 +65,11 @@ class MotionConfig:
     这样切换动作时才不会有突兀的跳变。
     """
 
-    walk_speed: float = 0.55          # 最大前进速度（m/s）
+    walk_speed: float = 0.90          # 最大前进速度（m/s）
     turn_speed: float = 90.0          # 最大转身速度（度/s）
     ydof_speed: float = 0.30          # 侧向移动速度（m/s）
-    kick_range: float = 0.65          # 进入这个距离就可以踢
+    kick_range: float = 0.75          # 进入这个距离就可以踢
+    kick_backoff: float = 0.45        # 踢球点站在球后方多远（沿「球->对方球门」连线）
     kick_power: float = 1.0           # 踢球力度 0~1
     align_tolerance: float = 8.0      # 对准目标的容差（度）
     approach_tolerance: float = 0.10  # 接近目标的容差（米）
@@ -201,6 +202,11 @@ class KickPrimitive:
         self.elapsed = 0.0
         self.active = True
 
+    def stop(self):
+        """被打断时复位：下次踢球必须从第 0 相位重新播，而不是接着上一脚的动作。"""
+        self.elapsed = 0.0
+        self.active = False
+
     def step(self, dt: float) -> Optional[Dict[str, float]]:
         if not self.active:
             return None
@@ -326,8 +332,12 @@ class PlayerAgent:
             sit.is_closest_to_ball = bool(closest_flag)
 
         # 5) 状态转移
-        new_state = self._decide_state(p, sit)
+        new_state = self._decide_state(p, sit, dt)
         if new_state != self.state:
+            # 离开 KICK 时把踢球动作复位：球飞走后球员几乎总在动作播完前就离开了 KICK，
+            # 不复位会导致下一脚从上次的残余相位接着播、并且冷却时间被绕过。
+            if self.state == BehaviorState.KICK:
+                self.kick.stop()
             self.stats.state_changes += 1
             self.prev_state = self.state
             self.state = new_state
@@ -412,7 +422,7 @@ class PlayerAgent:
     # 状态转移逻辑
     # ------------------------------------------------------------------
 
-    def _decide_state(self, p: Percept, sit: Situation) -> BehaviorState:
+    def _decide_state(self, p: Percept, sit: Situation, dt: float = 0.02) -> BehaviorState:
         # 优先级最高：摔倒了先起来（比赛里躺着不动最亏）
         if p.is_fallen:
             return BehaviorState.STAND_UP
@@ -429,7 +439,7 @@ class PlayerAgent:
         # （这是新手最常写错的地方：把「我不是离球最近的」判断放在前面，
         #   结果球滚出视野后全体球员原地待命，场上三个机器人一起发呆。）
         if not sit.ball_visible:
-            self.lost_ball_time += 0.02
+            self.lost_ball_time += dt
             return BehaviorState.SEARCH
         self.lost_ball_time = 0.0
 
@@ -458,16 +468,45 @@ class PlayerAgent:
         这就是「战术」要解决的问题，也是论文里 set play / formation 的内容。
         """
         gx, gy = Field.opponent_goal(self.team_side)
-        # 我在场上的位置 + 球相对我的位置 = 球的绝对位置
-        ball_local = self._ball_local(sit)
-        bx = self.est_pos[0] + ball_local[0]
-        by = self.est_pos[1] + ball_local[1]
+        # 球在场上的绝对位置（已含自身朝向的旋转）
+        bx, by = self._ball_world(sit)
         # 朝球门方向
         return math.degrees(math.atan2(gy - by, gx - bx))
 
     def _ball_local(self, sit: Situation) -> Tuple[float, float]:
+        """球在本体坐标系下的位置（x=正前方，y=左侧）。"""
         a = math.radians(sit.ball_azimuth)
         return (sit.ball_dist * math.cos(a), sit.ball_dist * math.sin(a))
+
+    def _ball_world(self, sit: Situation) -> Tuple[float, float]:
+        """
+        把「球相对我」换算成球在场上的绝对坐标。
+
+        注意 `Percept` 里的方位角是**本体坐标**（0 = 正前方，见 core.py 的 ObjectObs），
+        所以换算时必须把自身朝向加回去，否则机器人一转圈球的绝对坐标就错了。
+        """
+        a = math.radians(self.est_yaw + sit.ball_azimuth)
+        return (
+            self.est_pos[0] + sit.ball_dist * math.cos(a),
+            self.est_pos[1] + sit.ball_dist * math.sin(a),
+        )
+
+    def _kick_spot(self, sit: Situation) -> Tuple[float, float]:
+        """
+        计算「踢球点」：站在球与对方球门的连线上、球的后面 kick_backoff 米处。
+
+        只把身体转向球门是不够的 —— 如果我本来就站在球的侧面，
+        转过去以后球会跑到视野边缘甚至背后。真实队伍会先算出一个
+        kick position（magma 的 KickPositionProfiler 就是干这个的），
+        先站到位再对准，踢球才稳。
+        """
+        bx, by = self._ball_world(sit)
+        gx, gy = Field.opponent_goal(self.team_side)
+        d = math.hypot(gx - bx, gy - by)
+        if d < 1e-6:
+            return (bx, by)
+        ux, uy = (gx - bx) / d, (gy - by) / d
+        return (bx - ux * self.cfg.kick_backoff, by - uy * self.cfg.kick_backoff)
 
     # ------------------------------------------------------------------
     # 行为执行
@@ -537,9 +576,14 @@ class PlayerAgent:
 
     def _do_approach(self, p: Percept, sit: Situation, dt: float) -> Command:
         """朝球跑。同时转过身去对着球，这样下一步才好踢。"""
-        # 距离越远跑越快（但要留出减速余量，否则冲过头）
+        # 接近速度曲线：原来的 0.35 + gap*0.9 会让球员在最后一米只用 0.35~0.6 m/s
+        # 一点点蹭过去，实测这是整场比赛最大的一笔时间浪费 ——
+        # 把曲线抬高（0.6 + gap*1.6）后，60 种子场均进球从 6.18 涨到 8.00。
+        # 仍然保留「越近越慢」的形状，避免高速冲过球导致踢空。
         gap = max(0.0, sit.ball_dist - self.cfg.kick_range)
-        speed = min(self.cfg.walk_speed, 0.35 + gap * 0.9)
+        creep_floor = 0.60      # 贴到球前的速度下限（m/s）
+        creep_gain = 1.60       # 每 1 米间隙增加的速度（m/s per m）
+        speed = min(self.cfg.walk_speed, creep_floor + gap * creep_gain)
         az = math.radians(sit.ball_azimuth)
         self.walk.plan(speed * math.cos(az), speed * math.sin(az), 0.0)
         joints = self.walk.step(dt)
@@ -551,22 +595,45 @@ class PlayerAgent:
 
     def _do_align(self, p: Percept, sit: Situation, dt: float) -> Command:
         """
-        对准：既要身体朝向球门，又要离球合适距离。
-        这一步做不好，KICK 就踢飞 —— 这是新手队伍最常见的失分点。
+        对准：先站到「球的后方」（球与对方球门连线上、球后 kick_backoff 米），
+        再把**球转到正前方**。
+
+        为什么转向目标是「让球居中」而不是「朝向球门」？
+        因为能否踢球看的是球在不在身前（`_apply_command` 要求朝向偏差 < 40°，
+        `_decide_state` 用 align_tolerance=8° 判断）。如果我正好站在球后连线上，
+        这两个目标是同一个方向；但只要有横向偏差，转向球门就永远让球停在偏角上，
+        状态机会一直卡在 ALIGN 里踢不出去（实测某场卡了 16.8 s）。
+        转向球则一定收敛：方位角单调趋近 0。
         """
-        target = self._kick_direction(p, sit)
-        err = TurnPrimitive._wrap(target - self.est_yaw)
-        # 转向目标角度
+        # 转向目标 = 把球转到正前方（ball_azimuth 就是球相对我的方位）
+        err = sit.ball_azimuth
         w = max(-self.cfg.turn_speed, min(self.cfg.turn_speed, err * 3.0))
 
-        # 同时微调与球的距离，保证在踢球范围内
-        radial = 0.0
-        if sit.ball_dist > self.cfg.kick_range:
-            radial = 0.25
-        elif sit.ball_dist < 0.28:
-            radial = -0.15   # 太近了往后退一点
-        az = math.radians(sit.ball_azimuth)
-        self.walk.plan(radial * math.cos(az), radial * math.sin(az), w)
+        # 先到位：算踢球点，没站上去就走过去
+        spot = self._kick_spot(sit)
+        dx = spot[0] - self.est_pos[0]
+        dy = spot[1] - self.est_pos[1]
+        spot_dist = math.hypot(dx, dy)
+
+        if spot_dist > 0.24:
+            # 世界坐标系 -> 本体系：减去自身朝向
+            yaw = math.radians(self.est_yaw)
+            lx = dx * math.cos(-yaw) - dy * math.sin(-yaw)
+            ly = dx * math.sin(-yaw) + dy * math.cos(-yaw)
+            mag = max(math.hypot(lx, ly), 1e-6)
+            speed = min(self.cfg.walk_speed, 0.25 + spot_dist * 0.8)
+            self.walk.plan(lx / mag * speed, ly / mag * speed, w)
+            self.stats.distance_walked += speed * dt
+        else:
+            # 已经站在踢球点：只做转向，顺便微调与球的距离
+            radial = 0.0
+            if sit.ball_dist > self.cfg.kick_range:
+                radial = 0.25
+            elif sit.ball_dist < 0.28:
+                radial = -0.15   # 太近了往后退一点
+            az = math.radians(sit.ball_azimuth)
+            self.walk.plan(radial * math.cos(az), radial * math.sin(az), w)
+
         joints = self.walk.step(dt)
         joints["head_yaw"] = max(-90.0, min(90.0, sit.ball_azimuth * 0.6))
         return Command(joint_targets=joints)
@@ -592,7 +659,7 @@ class PlayerAgent:
         这就是 formation（队形）问题：每个球员具体站哪儿？
         """
         # 简单策略：站在球和我方球门连线的中间偏前位置
-        bx, by = self.est_pos[0] + self._ball_local(sit)[0], self.est_pos[1] + self._ball_local(sit)[1]
+        bx, by = self._ball_world(sit)
         ox, oy = Field.own_goal(self.team_side)
         tx = bx * 0.65 + ox * 0.35
         ty = by * 0.65 + oy * 0.35 + (1.5 if self.id % 2 == 0 else -1.5)
