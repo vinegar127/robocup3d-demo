@@ -65,7 +65,7 @@ class MotionConfig:
     这样切换动作时才不会有突兀的跳变。
     """
 
-    walk_speed: float = 1.40          # 最大前进速度（m/s）
+    walk_speed: float = 0.90          # 最大前进速度（m/s）
     turn_speed: float = 90.0          # 最大转身速度（度/s）
     ydof_speed: float = 0.30          # 侧向移动速度（m/s）
     kick_range: float = 0.75          # 进入这个距离就可以踢
