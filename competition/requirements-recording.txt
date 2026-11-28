@@ -1,0 +1,5 @@
+# Optional Linux MuJoCo replay recording, video encoding, and analysis plots.
+-r requirements.txt
+imageio-ffmpeg==0.8.1
+Pillow==13.0.0
+matplotlib==3.11.2

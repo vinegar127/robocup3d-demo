@@ -1,0 +1,48 @@
+[
+  {
+    "directory": "match-htcpl_vc",
+    "sample_time": 0.0,
+    "mode": "BeforeKickOff",
+    "issues": [
+      {
+        "kind": "too_many_in_own_goalie_area",
+        "side": 1,
+        "numbers": [
+          7,
+          1,
+          6
+        ],
+        "allowed": 2
+      }
+    ]
+  },
+  {
+    "directory": "match-4zuxeymk",
+    "sample_time": 0.1,
+    "mode": "KickOff_Left",
+    "issues": []
+  },
+  {
+    "directory": "match-3m_19fk2",
+    "sample_time": 0.18,
+    "mode": "KickOff_Left",
+    "issues": [
+      {
+        "kind": "outside_field",
+        "side": 1,
+        "number": 1,
+        "position": [
+          2.0054985873559708,
+          20.99074249991848,
+          0.6876392734271938
+        ]
+      }
+    ]
+  },
+  {
+    "directory": "match-1kgt53o7",
+    "sample_time": 0.18,
+    "mode": "KickOff_Left",
+    "issues": []
+  }
+]

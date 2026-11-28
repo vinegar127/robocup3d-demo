@@ -1,0 +1,14 @@
+[
+  {
+    "candidate": "progress",
+    "patch_applied": true,
+    "changed_files_match_tested_candidate_sha256": true,
+    "directory": "E:\\3d\u4eff\u771f\\tmp\\patch-progress-6nkdtmn6"
+  },
+  {
+    "candidate": "self-filter",
+    "patch_applied": true,
+    "changed_files_match_tested_candidate_sha256": true,
+    "directory": "E:\\3d\u4eff\u771f\\tmp\\patch-self-filter-smj2127w"
+  }
+]

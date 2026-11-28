@@ -1,0 +1,59 @@
+--- a/team/world.py
++++ b/team/world.py
+@@ -43,6 +43,7 @@
+     opponents: dict = field(default_factory=dict)
+     messages: list = field(default_factory=list)
+     pass_intents: dict = field(default_factory=dict)
++    player_number: int | None = None
+ 
+     def update(self, message: str) -> None:
+         expressions = parse(message)
+@@ -107,11 +108,16 @@
+                         other = fields(item)
+                         if 'team' not in other or 'id' not in other:
+                             continue
++                        identity = int(other['id'][0])
++                        # RCSSServerMJ also reports visible markers on our own
++                        # body. They must never enter teammate/obstacle tracks.
++                        if other['team'][0] == self.team_name and identity == self.player_number:
++                            self.teammates.pop(identity, None)
++                            continue
+                         points = [self.to_world(numbers(fields(p)['pol'], 3)) for p in item[1:] if isinstance(p, list) and 'pol' in fields(p)]
+                         if points:
+                             point = tuple(sum(p[i] for p in points) / len(points) for i in range(3))
+                             target = self.teammates if other['team'][0] == self.team_name else self.opponents
+-                            identity = int(other['id'][0])
+                             heard = target.get(identity, {}).get('heard_at', -math.inf)
+                             target[identity] = {'position': point, 'time': self.now, 'source': 'vision', 'heard_at': heard}
+         self.frames += 1
+--- a/team/agent.py
++++ b/team/agent.py
+@@ -15,7 +15,7 @@
+ 
+ def run(args) -> dict:
+     config = json.loads(CONFIG.read_text(encoding="utf-8"))
+-    world = World(args.team)
++    world = World(args.team, player_number=args.number)
+     controller = Controller(config, args.number, args.team, args.behavior, args.walk_target)
+     connection = Connection(args.host, args.port)
+     started = time.monotonic()
+--- a/tests/test_soccer.py
++++ b/tests/test_soccer.py
+@@ -49,6 +49,17 @@
+         world.teammates[2]['heard_at'] = 1.
+         self.assertEqual(Strategy(config, 7).select_active(world), 2)
+ 
++    def test_self_visual_markers_are_not_obstacles_or_teammates(self):
++        world = World('StudyBlue', player_number=7, position=(0., 0., .66), quaternion=(1., 0., 0., 0.))
++        world.teammates[7] = {'position':(.2,0.,.1),'time':0.}
++        world.update('(time (now 1))(See '
++                     '(P (team StudyBlue)(id 7)(l_foot (pol .5 0 -50)))'
++                     '(P (team StudyBlue)(id 6)(head (pol 2 0 0)))'
++                     '(P (team StudyOrange)(id 7)(head (pol 3 10 0))))')
++        self.assertNotIn(7, world.teammates)
++        self.assertIn(6, world.teammates)
++        self.assertIn(7, world.opponents)
++
+     def test_shooting_geometry_on_both_sides(self):
+         config = json.loads(CONFIG.read_text())
+         for sign, side, quaternion in [(1, 'left', (1., 0., 0., 0.)), (-1, 'right', (0., 0., 0., 1.))]:

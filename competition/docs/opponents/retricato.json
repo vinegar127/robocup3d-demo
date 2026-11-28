@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/Retricato/RCSS-Booster-Client",
+  "commit": "a11805749206b72ab9140ec08b158c1cd4e259cc",
+  "use": "Pinned unmodified local benchmark opponent; license retained if present, no relicensing assumed",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 209,
+      "sha256": "50851dda911995f06e1812817ea0b77f3f67de7ece58750a5ee4d0073189d8a2"
+    },
+    {
+      "path": "GIT_WORKFLOW.md",
+      "bytes": 5794,
+      "sha256": "3096b6b7f40c242ac3cf316361c4e5cf219e2deb74329003fa725acfecd6e688"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15907,
+      "sha256": "a4cf0fb040d50aac1a552a7c26b0829b90414b42aae7561a0129ee1c40e44aa2"
+    },
+    {
+      "path": "VORONOI.md",
+      "bytes": 6413,
+      "sha256": "ebe4c54c7806ed65108c1e49ec56dc1916838be2143ad64a56f511563dc7c14e"
+    },
+    {
+      "path": "locomotion_nn.pth",
+      "bytes": 1313993,
+      "sha256": "06457c17bf9f328045208d686fc9da1d1127934db43b6f4d1984e1a3a9727fa4"
+    },
+    {
+      "path": "locomotion_nn_meta.json",
+      "bytes": 895,
+      "sha256": "13ec75de840e9d4f975e8c9a3b82c4ea8db951e5529754f000a3583562873bd8"
+    },
+    {
+      "path": "nn_client.py",
+      "bytes": 41441,
+      "sha256": "da6ab353e93299f50e6fb852d564f0da109e0d28776e140f61fc58f21118df31"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 18,
+      "sha256": "f5f7c93ef1563c50385824debb8e9c7b608db1c58b749698095f97df76815a3e"
+    },
+    {
+      "path": "start_team.py",
+      "bytes": 2926,
+      "sha256": "33a063a4d56ef085556824c4b444a0e930085fa1d762b5518c3bb0449eec276f"
+    },
+    {
+      "path": "start_team.sh",
+      "bytes": 259,
+      "sha256": "65ccd86e91f4ac0564f234c6973c5cce78180f4c765469180c4ef6734cff0881"
+    },
+    {
+      "path": "start_two_robots.py",
+      "bytes": 5599,
+      "sha256": "59e9aaf38c3aad8c95cfd9860557adf7382bdd5e941e268bb381647852bb158d"
+    },
+    {
+      "path": "torch_policy.py",
+      "bytes": 7063,
+      "sha256": "a5d7c001919029074215f7f1908a3605e02563817467b8e92499f7578f091370"
+    }
+  ]
+}

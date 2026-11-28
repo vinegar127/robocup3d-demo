@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-28",
+  "candidate": "demo-fast-chase",
+  "default_changed": false,
+  "policy_input_limits_changed": false,
+  "regression_tests": 34,
+  "changes": [
+    "active approach: enter travel orientation above 1.6m, return to ball-facing fine placement below 0.9m",
+    "search turn command 0.35 to 0.5",
+    "turn proportional gain 0.8 to 1.6, retain 0.5 angular command cap",
+    "distant active forward command cap 0.9 to existing 1.0 limit",
+    "preserve support, defensive retreat, goalkeeping and strike navigation"
+  ],
+  "final_seed64": {
+    "demo-corrected": {
+      "front": {
+        "time_to_ball_1_1m_s": 6.12,
+        "time_to_face_ball_30deg_s": 0.32,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-corrected-front-64.json",
+        "directory": "output/evaluations/kick-lgwp4m1u"
+      },
+      "side": {
+        "time_to_ball_1_1m_s": 9.22,
+        "time_to_face_ball_30deg_s": 2.92,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-corrected-side-64.json",
+        "directory": "output/evaluations/kick-08hitx7j"
+      },
+      "behind": {
+        "time_to_ball_1_1m_s": 16.92,
+        "time_to_face_ball_30deg_s": 11.32,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-corrected-behind-64.json",
+        "directory": "output/evaluations/kick-tud26voa"
+      }
+    },
+    "demo-fast-chase": {
+      "front": {
+        "time_to_ball_1_1m_s": 5.52,
+        "time_to_face_ball_30deg_s": 0.32,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-fast-chase-front-64.json",
+        "directory": "output/evaluations/kick-utnj2uu8"
+      },
+      "side": {
+        "time_to_ball_1_1m_s": 9.22,
+        "time_to_face_ball_30deg_s": 3.02,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-fast-chase-side-64.json",
+        "directory": "output/evaluations/kick-a6wc0pah"
+      },
+      "behind": {
+        "time_to_ball_1_1m_s": 15.92,
+        "time_to_face_ball_30deg_s": 8.42,
+        "full_client_fallen_frames": 0,
+        "raw": "output/navigation/20261128/final-demo-fast-chase-behind-64.json",
+        "directory": "output/evaluations/kick-0q6vinw5"
+      }
+    }
+  },
+  "gait_calibration": {
+    "forward": {
+      "mean_forward_m_s": 0.7761402821885655,
+      "mean_sideways_m_s": -0.034161501488215965,
+      "mean_yaw_deg_s": -0.24809956461486576,
+      "full_client_fallen_frames": 0
+    },
+    "backward": {
+      "mean_forward_m_s": -0.4738107449437815,
+      "mean_sideways_m_s": -0.01184420866760027,
+      "mean_yaw_deg_s": 1.6384594561366526,
+      "full_client_fallen_frames": 0
+    },
+    "strafe": {
+      "mean_forward_m_s": -0.06210248115783943,
+      "mean_sideways_m_s": 0.4293174983412766,
+      "mean_yaw_deg_s": 0.5734512502306951,
+      "full_client_fallen_frames": 0
+    },
+    "turn": {
+      "mean_forward_m_s": -0.020119769320135476,
+      "mean_sideways_m_s": -0.023268026602435214,
+      "mean_yaw_deg_s": 22.603289262668724,
+      "full_client_fallen_frames": 0
+    }
+  },
+  "discarded_trial": {
+    "description": "turn-first for all travel, including support retreat",
+    "current_retreat_s": 9.22,
+    "all_travel_turn_first_s": 13.52,
+    "reason": "slower: keep original multidirectional support and defense"
+  },
+  "limits": [
+    "small set of initial poses and seeds, not a competitive strength estimate",
+    "large turn still limited by current learned gait",
+    "near-ball backstepping and lateral correction are intentional and retained"
+  ],
+  "short_match": {
+    "directory": "output/evaluations/match-prbk7e4q",
+    "opponent": "my3d",
+    "our_side": 1,
+    "our_score": [
+      0,
+      0
+    ],
+    "goals": [],
+    "mean_ball_progress_m": 6.983972313939472,
+    "attacking_half_fraction": 0.8530612244897959,
+    "our_kicks": 7,
+    "our_recoveries": 0,
+    "our_fallen_fraction": 0.0,
+    "opponent_fallen_fraction": 0.0,
+    "max_stationary_alignment_seconds": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 1.0
+    },
+    "validated": true,
+    "sim_seconds": 120.0,
+    "strategy": "demo-fast-chase"
+  },
+  "sha256": {
+    "team/chase_navigation.py": "e8b499c41660c2d906f444c13bbfd23518fc04c38f23f51249ed3a3a6fdf9b0b",
+    "team/behavior.py": "84d7d7754e970fd4db2a363fdeb88bcb92860bd478cdb85d6dd80601b56f6701",
+    "team/agent.py": "792cd9d764d31ed92950f5a97a22ed945651d41ccf02d27bc16a1951ea341584",
+    "tools/evaluate.py": "c6c123f050d0b98fbdef9b58127297440a21b3229ebfc2a04be481859181513f",
+    "tools/probe_navigation.py": "58a7c58e3dd088c37b6b3c8f1489a3eaadca0f17ba74441177ef49e24dc11de6",
+    "tests/test_chase_navigation.py": "2660034ff9fa68e359d7a5c3ce85fd55e3dd3fa0ddbd4f66c1c330cffff67e6d",
+    "run_fast_chase_match_linux.sh": "822d3cb4b4bd8cba44226d6baaa233bda79add4d2117dc30977974ab9f3d680b"
+  },
+  "video": {
+    "video": "output/navigation/20261128/fast-chase-my3d-1080p.mp4",
+    "fully_decoded": true,
+    "frames": 3001,
+    "metadata": {
+      "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(progressive)",
+      "fps": 25.0,
+      "source_size": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "rotate": 0,
+      "duration": 120.04
+    },
+    "sha256": "b86ea01d9e5aea03c97a730eb6413f02578f403bfff60b6e0170b563a5887074"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "repository": "https://gitlab.com/bahiart/BahiaRT-MujOCo-base",
+  "commit": "a77702a97d22b7b66966dd0de2c369fd4d10dbed",
+  "use": "Unmodified local benchmark opponent; no source relicensing or redistribution assumed",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "f679de11e0567c56df9ead9ed45fd56306ec4679d007313a80169462137ffd39",
+      "bytes": 117
+    },
+    {
+      "path": "README.md",
+      "sha256": "7b8125edbc50cb531b2bb9c5d66b4150e4c674fb9fdb344d37481d6dac0ec088",
+      "bytes": 3064
+    },
+    {
+      "path": "build_binary.sh",
+      "sha256": "56a9d9c4afd20513da0f4da708a146db94e372e8a494f68b0366ad0e24f91714",
+      "bytes": 1731
+    },
+    {
+      "path": "kill.sh",
+      "sha256": "02edb4e864afc9eda3155d19c6cfe71692a4705f1817cc3744578b83f7e8bfc4",
+      "bytes": 35
+    },
+    {
+      "path": "mujococodebase/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "mujococodebase/agent.py",
+      "sha256": "f2b1c66996723b3bc893653d6236cb1f4c4b5f4b2e922acbc24b392027dc0d60",
+      "bytes": 2638
+    },
+    {
+      "path": "mujococodebase/decision_maker.py",
+      "sha256": "84cfe16b22acb47c61a86ed17f3fcd867680e1fe70f96676178ad826af359a9d",
+      "bytes": 4608
+    },
+    {
+      "path": "mujococodebase/robot.py",
+      "sha256": "7556d9ce8244c3d2f390ebff5200a91add99755650064393c303a0f49d99e29d",
+      "bytes": 7554
+    },
+    {
+      "path": "mujococodebase/server.py",
+      "sha256": "81feaaf0872c7225dee2d5c127f75831db5bed235cbfbfaa9c0aaddf7d8c1f2b",
+      "bytes": 3571
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up.py",
+      "sha256": "cd257a23a460150cd91e201afed8359e7eaba80fb903ed1e70b756e570299647",
+      "bytes": 2524
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up_back.yaml",
+      "sha256": "368c4f294ab5d941cdbbc00be972849efa651cbf638cdf4db90a49f9a4dff583",
+      "bytes": 1868
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up_front.yaml",
+      "sha256": "07bd0f0d90694da5bb14e52ddbad1579b3a03685f9b0bbcfe3ae4455e010bfd9",
+      "bytes": 1918
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/keyframe.py",
+      "sha256": "2ed915ba0d19a527735f03c1f0fae8f9600161b7f3209180b229399d34fa73fb",
+      "bytes": 3228
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/poses/neutral/neutral.py",
+      "sha256": "20b978e40032fb294e70410964648d4429d02d24eeeb88df76787e461a8d14c6",
+      "bytes": 228
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/poses/neutral/neutral.yaml",
+      "sha256": "3e58524270bbcc3a5fd0646a9edcbf08190b984242626117cead7ac8b3e220a6",
+      "bytes": 384
+    },
+    {
+      "path": "mujococodebase/skills/skill.py",
+      "sha256": "a19cd452c265a34144a133a3a6d6882f74d03fbe6f680d8f8e9d1a2999ff7a42",
+      "bytes": 1190
+    },
+    {
+      "path": "mujococodebase/skills/skills_manager.py",
+      "sha256": "d5002acbaa47333e32a6538c5c356fb0d6abaac48473e004d7132303daa37e8f",
+      "bytes": 2961
+    },
+    {
+      "path": "mujococodebase/skills/walk/walk.onnx",
+      "sha256": "ece316886c2a4cde17402f0332f0f955a83db786490cf6d50cfc680e5e30434b",
+      "bytes": 836122
+    },
+    {
+      "path": "mujococodebase/skills/walk/walk.py",
+      "sha256": "d0f1de6c94ae69214ba1e1dedb0820ea965c747449c3e455f946f3b190b44073",
+      "bytes": 4482
+    },
+    {
+      "path": "mujococodebase/utils/math_ops.py",
+      "sha256": "a4427b34ffad2b49920ddce374a8f3f58a0e107fb9c517a880be0d910140aa47",
+      "bytes": 16106
+    },
+    {
+      "path": "mujococodebase/utils/neural_network.py",
+      "sha256": "db13d77b8e04d8ceb9029ac34a02e96a4fc952e95af3f728a2dfb0da950e6771",
+      "bytes": 2016
+    },
+    {
+      "path": "mujococodebase/world/field.py",
+      "sha256": "8ee9a82c6fa6166767f140cad164c602b9e814ebc7ad16829dc74c6296344982",
+      "bytes": 1136
+    },
+    {
+      "path": "mujococodebase/world/field_landmarks.py",
+      "sha256": "740f39f793afd2ee668b9b3ba2cdd1aa7b0b6295128364bf7bc841d6ee4c6430",
+      "bytes": 1178
+    },
+    {
+      "path": "mujococodebase/world/other_robot.py",
+      "sha256": "4c3b0a8112496961a99dde1ba3a7317520d55a1ee1138ce31ae51d267ca2e6d6",
+      "bytes": 195
+    },
+    {
+      "path": "mujococodebase/world/play_mode.py",
+      "sha256": "368fe9eacbc156ccced1509971e1ee893a88c2d13db8465ad75b6b0d2b4cfae7",
+      "bytes": 7243
+    },
+    {
+      "path": "mujococodebase/world/world.py",
+      "sha256": "013353359dd7de791d4fc545a58a6c514b8f6ce9fd354f7c510de7f6bf0c61e0",
+      "bytes": 2583
+    },
+    {
+      "path": "mujococodebase/world_parser.py",
+      "sha256": "2992947099efc1d36d809b3f1b9cefaeb0a88743bf5ec0c115a80f90392f6dd7",
+      "bytes": 10296
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c0182d008eef9fbd96ce0303d8e4ba0b7b3fec5639abd3efb3641f5626ebfef8",
+      "bytes": 686
+    },
+    {
+      "path": "run_player.py",
+      "sha256": "a7f7750fed4cd28d7f959c0229cd2797b80a62212d7502aa2c0db76893b60bbe",
+      "bytes": 985
+    },
+    {
+      "path": "start.sh",
+      "sha256": "d21b3a5efd5438cc0ff09a54cf5de3ac253f5f7524400384b709cd39abce78fa",
+      "bytes": 179
+    },
+    {
+      "path": "start3v3.sh",
+      "sha256": "23167db31fa0bffe0d09c1b36a6552f8c9bd0f7f51270ab35cb875c05f35547d",
+      "bytes": 190
+    }
+  ]
+}

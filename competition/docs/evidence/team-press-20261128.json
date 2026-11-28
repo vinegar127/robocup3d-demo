@@ -1,0 +1,241 @@
+{
+  "date": "2026-11-28",
+  "regression_tests": 41,
+  "default_changed": false,
+  "note": "One paired short match; tactical and turn changes are combined, not a strength estimate.",
+  "matches": {
+    "current": {
+      "analysis": {
+        "directory": "output/evaluations/match-fd374w1w",
+        "opponent": "my3d",
+        "our_side": 1,
+        "our_score": [
+          0,
+          0
+        ],
+        "goals": [],
+        "mean_ball_progress_m": 2.334628633475054,
+        "attacking_half_fraction": 0.8954545454545455,
+        "our_kicks": 6,
+        "our_recoveries": 0,
+        "our_fallen_fraction": 0.0,
+        "opponent_fallen_fraction": 0.0008243828905219521,
+        "max_stationary_alignment_seconds": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 2.0
+        }
+      },
+      "validated": true,
+      "strategy": "demo-fast-chase",
+      "participation": {
+        "frames": 440,
+        "mean_players": 1.5568181818181819,
+        "fraction_with_at_least_2": 0.6363636363636364,
+        "fraction_with_at_least_3": 0.0,
+        "definition": "PlayOn, ball beyond our -8m, field players within 8m and no more than 5m behind ball"
+      },
+      "red_turns": {
+        "samples": 495,
+        "median_deg_s": 18.988268277038383,
+        "p90_deg_s": 26.611884318197188
+      },
+      "blue_turns": {
+        "samples": 1939,
+        "median_deg_s": 19.26672609904151,
+        "p90_deg_s": 24.448019770926745
+      },
+      "own_states": {
+        "READY": 372,
+        "DEFEND": 12935,
+        "GOALKEEPER": 5062,
+        "GAME_OVER": 7,
+        "SUPPORT": 18781,
+        "ALIGN_DRIBBLE": 3931,
+        "DRIBBLE": 1034,
+        "KICK": 96,
+        "RESTART_CLEARANCE": 154
+      },
+      "own_touching_players": [
+        5,
+        6,
+        7
+      ],
+      "sampled_commands_above_old_turn_cap": 0
+    },
+    "team": {
+      "analysis": {
+        "directory": "output/evaluations/match-rx43_10f",
+        "opponent": "my3d",
+        "our_side": 1,
+        "our_score": [
+          0,
+          0
+        ],
+        "goals": [],
+        "mean_ball_progress_m": -1.2223113094874019,
+        "attacking_half_fraction": 0.510989010989011,
+        "our_kicks": 7,
+        "our_recoveries": 0,
+        "our_fallen_fraction": 0.0,
+        "opponent_fallen_fraction": 0.0017670758428951772,
+        "max_stationary_alignment_seconds": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1.0,
+          "5": 0,
+          "6": 0,
+          "7": 1.0
+        }
+      },
+      "validated": true,
+      "strategy": "demo-team-press",
+      "participation": {
+        "frames": 383,
+        "mean_players": 2.691906005221932,
+        "fraction_with_at_least_2": 0.7911227154046997,
+        "fraction_with_at_least_3": 0.5718015665796344,
+        "definition": "PlayOn, ball beyond our -8m, field players within 8m and no more than 5m behind ball"
+      },
+      "red_turns": {
+        "samples": 1238,
+        "median_deg_s": 15.079463988007523,
+        "p90_deg_s": 36.23223288520461
+      },
+      "blue_turns": {
+        "samples": 2088,
+        "median_deg_s": 18.313272513011402,
+        "p90_deg_s": 24.388869603026848
+      },
+      "own_states": {
+        "READY": 374,
+        "DEFEND": 10431,
+        "GOALKEEPER": 5814,
+        "GAME_OVER": 7,
+        "ALIGN_DRIBBLE": 4423,
+        "DRIBBLE": 822,
+        "KICK": 112,
+        "ALIGN_PASS": 414,
+        "SUPPORT": 2027,
+        "ATTACK_SUPPORT": 6643,
+        "ATTACK_RUN": 4928,
+        "PRESS_COVER": 6049,
+        "RECEIVE_PASS": 179,
+        "RESTART_CLEARANCE": 151
+      },
+      "own_touching_players": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "sampled_commands_above_old_turn_cap": 57
+    }
+  },
+  "calibration": {
+    "demo-corrected-arc075-65": {
+      "yaw_deg_s": 40.30314973678769,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "demo-corrected-arc075right-65": {
+      "yaw_deg_s": -35.66693768650602,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "demo-corrected-turn075-66": {
+      "yaw_deg_s": 38.359348540398635,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "demo-corrected-turn075right-66": {
+      "yaw_deg_s": -38.01456748702795,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "turn075-65": {
+      "yaw_deg_s": 38.70781641251346,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "turn075right-65": {
+      "yaw_deg_s": -38.0723229707623,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "turn100-65": {
+      "yaw_deg_s": 53.13526315903673,
+      "fallen_frames": 0,
+      "error": null
+    },
+    "turn100right-65": {
+      "yaw_deg_s": -53.30115463990257,
+      "fallen_frames": 0,
+      "error": null
+    }
+  },
+  "source_sha256": {
+    "team/team_press.py": "898961927b48ed4361188112a8a146c10b8f38728d318acb6729eb8da5d0b6f0",
+    "team/chase_navigation.py": "5244ca32d079ae4bb5654c3cf922e8a972db4b4948841a41e1fd855593cb4431",
+    "team/behavior.py": "37cadacb24f02edb170c04f521bc2a96e94835597396b156e5c56d0b16cf11ea",
+    "team/motion.py": "30cf329f63c1f49b78b8392384f949c88e07ceccbb9ef9ba446fd0a3a1ff73f3",
+    "team/agent.py": "e8842ffd80a3b70a774633a66725bdc11758c5a2f48132e02aaacb7a5ec14977",
+    "tools/evaluate.py": "0cdad0ca68c04e75ff7635314c15a1eb43a795cfcf2ba8fc2f7b78112aa67c88"
+  },
+  "shared_base_walk_policy_sha256": "6df65fa7d36fd4989fcb022e385de797d51f35c8375532841034716e4bc0d850",
+  "candidate": "demo-team-press",
+  "main_ball_carriers": 1,
+  "support_roles": [
+    "PRESS_COVER",
+    "ATTACK_RUN",
+    "ATTACK_SUPPORT"
+  ],
+  "motion": {
+    "default_turn_input_cap": 0.5,
+    "candidate_stationary_turn_input_cap": 0.75,
+    "near_ball_radius_m": 1.2,
+    "combined_translation_turn_cap": 0.5,
+    "weights_retrained": false
+  },
+  "limitations": [
+    "single paired 120-second match, both draws",
+    "participation measured from actual positions with an explicit spatial filter",
+    "field turn percentiles are descriptive, not matched constant-input measurements",
+    "possession and ball-winning success have not been measured"
+  ],
+  "isolated_chase_check": {
+    "directory": "output/evaluations/kick-6we1_4s_",
+    "time_to_ball_1_1m": 14.12,
+    "time_to_face_ball_30deg": 7.52,
+    "sampled_falls": 0
+  },
+  "launcher": "run_team_press_match_linux.sh",
+  "blue_base_walk_policy_sha256": "6df65fa7d36fd4989fcb022e385de797d51f35c8375532841034716e4bc0d850",
+  "video": {
+    "file": "output/team-press/20261128/team-press-my3d-wide-1080p.mp4",
+    "fully_decoded": true,
+    "frames": 3001,
+    "metadata": {
+      "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p(progressive)",
+      "fps": 25.0,
+      "source_size": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "rotate": 0,
+      "duration": 120.04
+    },
+    "sha256": "6c622126906f3099f2e1b0975974a758f4bfc0f8a150cfe52710031eb324ca18"
+  }
+}

@@ -1,0 +1,637 @@
+{
+  "repository": "https://github.com/o-1717986918/My3DProject",
+  "commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12",
+  "use": "Pinned unmodified local benchmark opponent; license retained if present, no relicensing assumed",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9706,
+      "sha256": "950dbd6691e1ef823ca06d9c93a4855c3d34425359c05db6d301d12f5148fed9"
+    },
+    {
+      "path": "runtime/apollo/.gitignore",
+      "bytes": 350,
+      "sha256": "e8524f70c790de4019ee0e125829428f1b47c63eb46f0e359289ba7fa25da9c4"
+    },
+    {
+      "path": "runtime/apollo/CMakeLists.txt",
+      "bytes": 14074,
+      "sha256": "b745f1aeb9336b50af5d3edb4705355f534647ded242465a48e0522c1e376c78"
+    },
+    {
+      "path": "runtime/apollo/LICENSE.md",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "runtime/apollo/README.md",
+      "bytes": 10333,
+      "sha256": "36a7b25b80541e4097b42c2f83370364f6c03d24c0da4ac7aff64e8e33dda120"
+    },
+    {
+      "path": "runtime/apollo/UPSTREAM.md",
+      "bytes": 792,
+      "sha256": "4b5a1e1e6370f91c1926736773e675807ea8cac5a1c9e10cc3cc8ff464871684"
+    },
+    {
+      "path": "runtime/apollo/assets/keyframes/kick_residual_table.yaml",
+      "bytes": 98584,
+      "sha256": "f8cacbeb6a125257ef34e2b51e76738e5940dcd374032d80622b54236f9fc54e"
+    },
+    {
+      "path": "runtime/apollo/assets/keyframes/neutral.yaml",
+      "bytes": 384,
+      "sha256": "3e58524270bbcc3a5fd0646a9edcbf08190b984242626117cead7ac8b3e220a6"
+    },
+    {
+      "path": "runtime/apollo/assets/keyframes/procedural_kick.yaml",
+      "bytes": 8381,
+      "sha256": "fabc4fcbb337555c650c93e41468d9b3d209a376fa0519156680ed34c889f811"
+    },
+    {
+      "path": "runtime/apollo/assets/networks/getup/policy.onnx",
+      "bytes": 825546,
+      "sha256": "ae6ade761e50fccb432e118cebd456d9e96e87de0fa3a3adc2d5f92ef496a83d"
+    },
+    {
+      "path": "runtime/apollo/assets/networks/walk/policy.onnx",
+      "bytes": 844497,
+      "sha256": "6df65fa7d36fd4989fcb022e385de797d51f35c8375532841034716e4bc0d850"
+    },
+    {
+      "path": "runtime/apollo/kill.sh",
+      "bytes": 501,
+      "sha256": "864d27d25716be709419ed93e30c8713e3ad276de5b649727ef01c4966c12737"
+    },
+    {
+      "path": "runtime/apollo/main.cc",
+      "bytes": 711,
+      "sha256": "e4f08eb107182bfcbf6cabfaa64f9282b8d649028d419e189d01213100671b0e"
+    },
+    {
+      "path": "runtime/apollo/pack.sh",
+      "bytes": 4746,
+      "sha256": "794c52432bc2e442210a80ea2f0c08d9ff4b93379cb2d90d0046b07bc1850153"
+    },
+    {
+      "path": "runtime/apollo/src/app/agent_app.cc",
+      "bytes": 25766,
+      "sha256": "c664371bcd7a1a450650b7af2c13298bb3028fc838eb44abd118995dfad5d789"
+    },
+    {
+      "path": "runtime/apollo/src/app/agent_app.h",
+      "bytes": 2219,
+      "sha256": "eba7844e48b06f899b93f835c531ce18c8bc2898ff2ea39aea8a81ae01832a42"
+    },
+    {
+      "path": "runtime/apollo/src/app/runtime_config.cc",
+      "bytes": 5292,
+      "sha256": "31d583d3efaf82d3b3847f61cb830c8d9f53c5044f89bc4dd70fd6e128982804"
+    },
+    {
+      "path": "runtime/apollo/src/app/runtime_config.h",
+      "bytes": 3644,
+      "sha256": "07a64aec1269f4b415d23fdf190792eaa9f75b5e23c2e81fe59d76809b1a1cdc"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/getup_runner.cc",
+      "bytes": 3126,
+      "sha256": "a5df65beb103ab004ec3d70168fcd0b82b9ada9966ff8d2d3f2d3d59fd33245d"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/getup_runner.h",
+      "bytes": 1636,
+      "sha256": "855ea69a0efce95351b82f9ca1ca1d162d15eeeee69c7bf041d527ede22fb10a"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/keyframe_runner.cc",
+      "bytes": 3538,
+      "sha256": "12f8819189c77def446bf9a7879a0b6adcf00daf78ae09a442b25097012e36ed"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/keyframe_runner.h",
+      "bytes": 1467,
+      "sha256": "e50591ce779ec5be6d1ae22922a6d6c612d8193f931c101a1ee0905a827abab0"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/kick_execution_profile.cc",
+      "bytes": 7408,
+      "sha256": "217f31d41b532c1fceaaf1e410bcd29eadb3087cb53263a2909c323644b41091"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/kick_execution_profile.h",
+      "bytes": 1964,
+      "sha256": "3904e23c8cd63be268dc7fec7b1c9e4b1ac7f4922e32c9867934902fa81d3d2a"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/kick_residual_runner.cc",
+      "bytes": 8680,
+      "sha256": "0c9c04f78628286adf067a3a6e668fbe8526d716ed03f504af6fa29da245b9fc"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/kick_residual_runner.h",
+      "bytes": 1655,
+      "sha256": "aaa60b0108d7e6900e342391bf738f91e221628e9f95c16a0fa1bfc22a95c408"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/learned_kick_runner.cc",
+      "bytes": 12202,
+      "sha256": "46812882353f9a4497a830a895cbadbc5c9211f2edd761792f37d3229033c04a"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/learned_kick_runner.h",
+      "bytes": 2379,
+      "sha256": "6264599da543d569cf628a1fd2809d94d73531eec263a8108203d70b34c30263"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/motion_manager.cc",
+      "bytes": 12717,
+      "sha256": "4f28d71683953c879cfee2087f3dd8698d42e80d7c62e24e7e565ac6239008e2"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/motion_manager.h",
+      "bytes": 3812,
+      "sha256": "e23376c9fdab8dff05183f21d18369e04b8643ca0378c9a1460d97d952701657"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/onnx_session.cc",
+      "bytes": 4740,
+      "sha256": "14676fa519a53641f0f6398a51aac7897133a085027e13c24ec3c559c84570cb"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/onnx_session.h",
+      "bytes": 1237,
+      "sha256": "69e3f8077476c465ef4426df0b117617d936ffffbcbed9ed18cdd44058f34f83"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/policy_common.h",
+      "bytes": 8516,
+      "sha256": "18417861c82b57d74c43c5c33b7c335af4d9bf947f1ac7ea91a7724d74b995e6"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/procedural_kick_runner.cc",
+      "bytes": 13105,
+      "sha256": "fce102167738b29b329b77a021714cd148d77f23d06ef11bffa5299dd459f53f"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/procedural_kick_runner.h",
+      "bytes": 2238,
+      "sha256": "8f8695f90bdd20d9f096b6b9b0becd9029b2fb5879ad1cfb1c908f070761dfd8"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/walk_runner.cc",
+      "bytes": 24931,
+      "sha256": "27481b19b6017f158667b3e120b733023b3793bbd260b9f72cd56568f5670737"
+    },
+    {
+      "path": "runtime/apollo/src/behavior/walk_runner.h",
+      "bytes": 4373,
+      "sha256": "b26a96b1a14726151cd266141323908bf9326ecbe6f637e0ce31a8cb3ed2422c"
+    },
+    {
+      "path": "runtime/apollo/src/comm/team_comm_codec.cc",
+      "bytes": 13370,
+      "sha256": "04478e62a1d44429e544379d967e8079b9ec7febf1336b692276e39fed2b66ae"
+    },
+    {
+      "path": "runtime/apollo/src/comm/team_comm_codec.h",
+      "bytes": 937,
+      "sha256": "b7a80640010145d3af3cf839f0552a0f2a5a40bae90def24906592a228d6add2"
+    },
+    {
+      "path": "runtime/apollo/src/comm/team_comm_manager.cc",
+      "bytes": 10419,
+      "sha256": "031f0fa1a5b0974d542be174197d60fee3e06717e5884a380f0aa76d6fe119b1"
+    },
+    {
+      "path": "runtime/apollo/src/comm/team_comm_manager.h",
+      "bytes": 1688,
+      "sha256": "09b672beb00c30819c60c0fbd696450019388e377439175e4402a8ceec5e47a6"
+    },
+    {
+      "path": "runtime/apollo/src/comm/team_comm_types.h",
+      "bytes": 3314,
+      "sha256": "fad7cc36dc8d7eae8eee4f5c78dd31af5eb530dab386f4238618503e1bfc7980"
+    },
+    {
+      "path": "runtime/apollo/src/decision/behavior_nodes.h",
+      "bytes": 4490,
+      "sha256": "4fc5e0f010ce0717406fac9c36a7d04d35e2583f26066d432cdc0677e607bcfc"
+    },
+    {
+      "path": "runtime/apollo/src/decision/behavior_tree.cc",
+      "bytes": 29331,
+      "sha256": "58553c35bdb7561f956c6846b16825f9867b9f41c5d7bf0dac9c99a67a2f2618"
+    },
+    {
+      "path": "runtime/apollo/src/decision/behavior_tree.h",
+      "bytes": 1381,
+      "sha256": "e2d17df21347909074756c8bbee2c2fe9967769b9266279754166e9da6af6536"
+    },
+    {
+      "path": "runtime/apollo/src/decision/blackboard.cc",
+      "bytes": 409,
+      "sha256": "779dddfc88617214cd6baf4e126a911513c7842c5cffab83aba981e9930de01f"
+    },
+    {
+      "path": "runtime/apollo/src/decision/blackboard.h",
+      "bytes": 1690,
+      "sha256": "ad952ce48a4416fd49263b4a7eafd006bf1c846c8a686af4df267ad7fbf7a461"
+    },
+    {
+      "path": "runtime/apollo/src/decision/decision_manager.cc",
+      "bytes": 1853,
+      "sha256": "25f1321b91f4697177e0cd7aa8e5a641e0c3770e5706fa15bff10846fec3a442"
+    },
+    {
+      "path": "runtime/apollo/src/decision/decision_manager.h",
+      "bytes": 1560,
+      "sha256": "0f048d6de7e74f90a1f7163237457774312ff5dbf2eada76d8b99f1255545ae8"
+    },
+    {
+      "path": "runtime/apollo/src/decision/execution_feedback.h",
+      "bytes": 1969,
+      "sha256": "876e7edec1adb8c1ac88727599359e1e601fb9d7ae26942731c385f0bf7e769e"
+    },
+    {
+      "path": "runtime/apollo/src/decision/field_geometry.h",
+      "bytes": 14750,
+      "sha256": "6dc272be4d13e20e663c9e5c6e7b102e6ad9ff7f1c4f598a57f1df043a92d43b"
+    },
+    {
+      "path": "runtime/apollo/src/decision/formation.cc",
+      "bytes": 19473,
+      "sha256": "c6f048ec9530a738727f082a024fa1676aec6b36dfc24a2e8ba287d580a4b036"
+    },
+    {
+      "path": "runtime/apollo/src/decision/formation.h",
+      "bytes": 1014,
+      "sha256": "afcd94fcff141f15e02d447efc0d1d897dca501952aea0180dbb512f0c87a068"
+    },
+    {
+      "path": "runtime/apollo/src/decision/high_level_command.h",
+      "bytes": 2397,
+      "sha256": "1f7a806e5c857d6eba2f1cf256c07e9c5a94841ff60bcd7918e474e776b9a145"
+    },
+    {
+      "path": "runtime/apollo/src/decision/kick_contract.h",
+      "bytes": 8598,
+      "sha256": "2de67a35aa306d6c4cc2b63b0f8520a0488af7763cf3bf27745deb650ab841f1"
+    },
+    {
+      "path": "runtime/apollo/src/decision/opponent_view.h",
+      "bytes": 1840,
+      "sha256": "67591bd2759c29fafbc3ad2b5d6f2d1099389564abc26fc6cb397d15d155a4ae"
+    },
+    {
+      "path": "runtime/apollo/src/decision/pass_lifecycle.cc",
+      "bytes": 11778,
+      "sha256": "8a082611aa25a889c8716adf141b79c1a1825dea6d569d6c73374bfb9e5933a0"
+    },
+    {
+      "path": "runtime/apollo/src/decision/pass_lifecycle.h",
+      "bytes": 2626,
+      "sha256": "bc95b7bcc03d08a9af54f6af6e577313c8d39f19c93fbb3ecae1f549dda2c1d1"
+    },
+    {
+      "path": "runtime/apollo/src/decision/restart_coordinator.cc",
+      "bytes": 28339,
+      "sha256": "f9a2b023bdfdd30cca143bdbd9d0a0caf8d1af76fa11d0664e8841c0ac0f83fb"
+    },
+    {
+      "path": "runtime/apollo/src/decision/restart_coordinator.h",
+      "bytes": 7115,
+      "sha256": "0cf413fcabb35b2a7db1f6513d7a089293ff41c89605fbfb45bcf6b54aad4ca3"
+    },
+    {
+      "path": "runtime/apollo/src/decision/role_behaviors.cc",
+      "bytes": 132909,
+      "sha256": "2226c68182cd5dc0ff66d6d8703925a3142f9edc9b18ebef80cdc46e13a87910"
+    },
+    {
+      "path": "runtime/apollo/src/decision/role_behaviors.h",
+      "bytes": 5502,
+      "sha256": "dba67c298418463386e5d3fabe115cd5f72a76bb09a4a8a87fb3bb829d676c87"
+    },
+    {
+      "path": "runtime/apollo/src/decision/role_manager.h",
+      "bytes": 4490,
+      "sha256": "51c80a78136ebac4e0a3814164b2f8b025880467e6a3a9c8628ba2190ba18ee0"
+    },
+    {
+      "path": "runtime/apollo/src/decision/role_manager_assignment.cc",
+      "bytes": 6709,
+      "sha256": "1711974154edf272f2fccf62fb76254a13bf970ffd93885ca476ca1a84ee2e44"
+    },
+    {
+      "path": "runtime/apollo/src/decision/role_manager_core.cc",
+      "bytes": 15329,
+      "sha256": "0a50c4c58cc5714d7c72bbd07ab1527ab137c4b96e8bcf79cb8c6c4eada76aea"
+    },
+    {
+      "path": "runtime/apollo/src/decision/team_tactics.cc",
+      "bytes": 52092,
+      "sha256": "68b473b4a1498a6d65285b8cdadc7bd25a8ee080ccf62f63e1fa676a85929d22"
+    },
+    {
+      "path": "runtime/apollo/src/decision/team_tactics.h",
+      "bytes": 4141,
+      "sha256": "e0f2a2d1515b024ee1919ecde669f44eb7adde87c8c1e4cbcae5295ed571c3fc"
+    },
+    {
+      "path": "runtime/apollo/src/decision/walk_planner.cc",
+      "bytes": 19826,
+      "sha256": "b171e63bd587dab30857547324615dc60d5150636da7414db7b7cf5a0869adaf"
+    },
+    {
+      "path": "runtime/apollo/src/decision/walk_planner.h",
+      "bytes": 946,
+      "sha256": "1aa049f7519264717c355c1cb0c6245056895e086cb92c6f5f2cd86a9154d40b"
+    },
+    {
+      "path": "runtime/apollo/src/math/math_utils.h",
+      "bytes": 6270,
+      "sha256": "c88877b02e47d7a6f40abe5d48f4dac9c87c93c521976cfde08df0a355ca62fb"
+    },
+    {
+      "path": "runtime/apollo/src/robot/joint_targets.h",
+      "bytes": 591,
+      "sha256": "6641eff24f0a61924641a8291885a464c4353c8d258b313b1683dc913aff8346"
+    },
+    {
+      "path": "runtime/apollo/src/robot/t1_joint_limits.h",
+      "bytes": 722,
+      "sha256": "b422ba436138edd058da67f1603a38dad0abc031228dea5213a04f5c4f2c854b"
+    },
+    {
+      "path": "runtime/apollo/src/robot/t1_robot_model.cc",
+      "bytes": 6229,
+      "sha256": "c5f014f47eb844adbd69188e3b658607e4d5c921d779a4396956aa684186b816"
+    },
+    {
+      "path": "runtime/apollo/src/robot/t1_robot_model.h",
+      "bytes": 2074,
+      "sha256": "0b2814e31da141e19b1651b00baa77869a0e23dae6af4ca21d27b2ec25c72296"
+    },
+    {
+      "path": "runtime/apollo/src/server/action_encoder.cc",
+      "bytes": 6851,
+      "sha256": "713fcd6e2edc9714a2f1a29170f29d74719d62aba23e1e36f1bfb65ca3a70f8d"
+    },
+    {
+      "path": "runtime/apollo/src/server/action_encoder.h",
+      "bytes": 1392,
+      "sha256": "7a1bbaf4db25de6c9d05a0909b6eaca2b116a6961b8441740f8533503db9ce85"
+    },
+    {
+      "path": "runtime/apollo/src/server/perception_parser.cc",
+      "bytes": 11940,
+      "sha256": "1268a3d0360ef04dac279b7401034a67d6f0f255afda49816c0605789fdc8755"
+    },
+    {
+      "path": "runtime/apollo/src/server/perception_parser.h",
+      "bytes": 534,
+      "sha256": "cc21e05f352867bbca0c48c4e5ba159ef98b2479c8696e4d7c5d3225020ccb2a"
+    },
+    {
+      "path": "runtime/apollo/src/server/perception_types.h",
+      "bytes": 2579,
+      "sha256": "33b64cc21a9f91930ab1bfaf7389b6ec7b43b6706e22c53f70bae9649804fef8"
+    },
+    {
+      "path": "runtime/apollo/src/server/server_constants.h",
+      "bytes": 2984,
+      "sha256": "22224fa801aaf10cc7d8c159a5b85390e4994f00468219d7903c42efbd125c1a"
+    },
+    {
+      "path": "runtime/apollo/src/server/tcp_lpm_client.cc",
+      "bytes": 5351,
+      "sha256": "01245b290a2caabb646be760d1ba1dc75946008c71787081659bb25c363e3fd0"
+    },
+    {
+      "path": "runtime/apollo/src/server/tcp_lpm_client.h",
+      "bytes": 1278,
+      "sha256": "b9c241a8973b0ef39dcba4b080114fee29641e66308227497f82038198dff943"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/action_capability.cc",
+      "bytes": 7339,
+      "sha256": "0caf1b0a95b48df0aa1ed8f942fc39a47f541c39be542e144da5d4a76cf1ed03"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/action_capability.h",
+      "bytes": 1888,
+      "sha256": "0a8ce43fb7b5966e31ae4c02da8b0b5433c5e787bf4c130092b71f7942720e1c"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/action_planner.cc",
+      "bytes": 10237,
+      "sha256": "2df78772fa73f51cb705f68e2a1a0ac1792dd93c610735114ab5f26057cbf4fa"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/action_planner.h",
+      "bytes": 1657,
+      "sha256": "ddcdb5c55e5f48cddf467052fc72c324b72e94b5e9153ba284bf3fbd671b8300"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/ball_trajectory_model.cc",
+      "bytes": 1795,
+      "sha256": "72c8c534d56fff3ae8252c22a8726781f05e805ed5ab398c108004fb7f11b86c"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/ball_trajectory_model.h",
+      "bytes": 995,
+      "sha256": "6a62505ae86fb386ae2fde2fae7f185a50b6c4466dfb297b036849458620006b"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/cooperative_action.cc",
+      "bytes": 2118,
+      "sha256": "8ef722abbc438b2293be19c5137a7ae6f71f15c13a06d166c0d8bde01a206ed7"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/cooperative_action.h",
+      "bytes": 1999,
+      "sha256": "8f117d07d8c35998dfeda1b8111aa5b523fa87213a69c420d9a85dac70f5b267"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/field_evaluator.cc",
+      "bytes": 3766,
+      "sha256": "450b4baa66902fd033a167d3ce69e4253d29b5228bd99e382f928de42bae4df2"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/field_evaluator.h",
+      "bytes": 1291,
+      "sha256": "00089174f4d628052f402995d350b68f674cd7ca54987cf4a7f8607ba328349e"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/pass_candidate_generator.cc",
+      "bytes": 9897,
+      "sha256": "261eab5193da6defa90b7d2f528b34ba95f22921a577f4c22118a8c8e08d5135"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/pass_candidate_generator.h",
+      "bytes": 1897,
+      "sha256": "9d7a1057b3a1badc8f1d63feccc196571c3a71a4411d52fc3a0316b4e060ea6c"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/reach_time_model.cc",
+      "bytes": 1401,
+      "sha256": "aa30c8114f3036a17020bf0e7b8d19b2d4196d73f7684bb1b7d13dbd1f1412db"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/reach_time_model.h",
+      "bytes": 825,
+      "sha256": "8d879b9609b3bf63b8ab46f915aed9f653c3092fe98c7041ba803b2780e2b39f"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/tactical_state.cc",
+      "bytes": 16223,
+      "sha256": "99587344a0ee1dec78025d79ce75e32960373f3cd609e797279f783de55d7df1"
+    },
+    {
+      "path": "runtime/apollo/src/strategy/tactical_state.h",
+      "bytes": 3053,
+      "sha256": "0c446a4ed7eaceef17f8eee870596d7485de82d52e38097ad8cafb556c4cf777"
+    },
+    {
+      "path": "runtime/apollo/src/world/ball_kalman.h",
+      "bytes": 5055,
+      "sha256": "90c922a984b84985539d5310893529420c713e8c1d052ca9f9204f6bfbd7dd12"
+    },
+    {
+      "path": "runtime/apollo/src/world/frame_normalizer.cc",
+      "bytes": 1323,
+      "sha256": "69d0633f7b4d9f8b24619b9bc6fe7b99600ad076d0126d80c094ab8264c9c2d3"
+    },
+    {
+      "path": "runtime/apollo/src/world/frame_normalizer.h",
+      "bytes": 993,
+      "sha256": "b2b6699dbf41e0a124a42a350e441fc89557f74120c36aac8328c2d615129a40"
+    },
+    {
+      "path": "runtime/apollo/src/world/play_mode.cc",
+      "bytes": 6277,
+      "sha256": "df6872e5624d2c6cf3768801dc433cc88d48b359884189d05bdbb2a74d1053b9"
+    },
+    {
+      "path": "runtime/apollo/src/world/play_mode.h",
+      "bytes": 1269,
+      "sha256": "a3bdbc61608c784b3fc8c89c9dee01d5efe83c3b67e598abe5bc297d6bdfecb6"
+    },
+    {
+      "path": "runtime/apollo/src/world/world_snapshot.h",
+      "bytes": 3060,
+      "sha256": "4f4196b54954d1cbdb7179d74c8603b9585dbd833e43be0d6f2700236e343c47"
+    },
+    {
+      "path": "runtime/apollo/src/world/world_state.cc",
+      "bytes": 35623,
+      "sha256": "27bee87435d7685b9db83bf6e2c31701ded3ac266d2a8acfac47d8dc5d480f56"
+    },
+    {
+      "path": "runtime/apollo/src/world/world_state.h",
+      "bytes": 1990,
+      "sha256": "4936698efb1bd5d19d12240b8a1eba1853faccf6f716be101069f571aa1384bd"
+    },
+    {
+      "path": "runtime/apollo/start.sh",
+      "bytes": 687,
+      "sha256": "f4bac86087f163f516975a5f6082571b9c7a932f350ef40e088c454dba85eed2"
+    },
+    {
+      "path": "runtime/apollo/start_opponent.sh",
+      "bytes": 717,
+      "sha256": "7b27252fa0dc7924e02d802ded67e22a11431672ec02013034643ae68822a7a3"
+    },
+    {
+      "path": "runtime/apollo/tests/action_capability_test.cc",
+      "bytes": 5472,
+      "sha256": "dcd940bcbf885fcc78b8528e468ae658c8317445a825f20b51117a7f450a0122"
+    },
+    {
+      "path": "runtime/apollo/tests/decision_safety_test.cc",
+      "bytes": 25584,
+      "sha256": "1d288bc60aff93f29de348741d4a7f240d5ca4c2356ae2e03c72e7cc8bbe29f3"
+    },
+    {
+      "path": "runtime/apollo/tests/decision_strategy_integration_test.cc",
+      "bytes": 71466,
+      "sha256": "39f78272654699eecfd2a4142adf85978dcfbe2740c3bc3edc659bc05671ffdf"
+    },
+    {
+      "path": "runtime/apollo/tests/execution_feedback_test.cc",
+      "bytes": 12445,
+      "sha256": "d6e5b22db6b9ad2edde760e4f58bc3dddf9418622bd435feb4eabc10bde64bd6"
+    },
+    {
+      "path": "runtime/apollo/tests/field_geometry_test.cc",
+      "bytes": 2123,
+      "sha256": "3e4838e1668855ecb6f508d6023ebfc87b2e5f71c177f28f35d336151b1c19fa"
+    },
+    {
+      "path": "runtime/apollo/tests/formation_strategy_test.cc",
+      "bytes": 1895,
+      "sha256": "9c01ab71bc26ac34a7ac6dfd98b0a31e5d9a4bd5e45b0a8647d7efceec3a4e75"
+    },
+    {
+      "path": "runtime/apollo/tests/kick_execution_profile_test.cc",
+      "bytes": 10043,
+      "sha256": "f242978694d6dd14dc89a00cefca9e3fe92217a8a748ff70e56db174931a5881"
+    },
+    {
+      "path": "runtime/apollo/tests/kick_residual_runner_test.cc",
+      "bytes": 4321,
+      "sha256": "2b5dd06fcb81ff10309e493134fcf278422573b7275c5c5fce2e8c002806c628"
+    },
+    {
+      "path": "runtime/apollo/tests/learned_kick_runner_test.cc",
+      "bytes": 4891,
+      "sha256": "74da44339d7f5ba7704425fa9d52587a67428e3a6b8081a3ab4f8f4656b854d0"
+    },
+    {
+      "path": "runtime/apollo/tests/pass_lifecycle_test.cc",
+      "bytes": 7205,
+      "sha256": "bc11c0409848a99d7ba56db4eccdde86fd4e5f70be549629b23f7d15eaa56aa7"
+    },
+    {
+      "path": "runtime/apollo/tests/procedural_kick_runner_test.cc",
+      "bytes": 8227,
+      "sha256": "554b39a41ce5513001a8c9dc1a9ffcb8436860a734bdec648f2369021ae1e01c"
+    },
+    {
+      "path": "runtime/apollo/tests/restart_coordinator_test.cc",
+      "bytes": 25271,
+      "sha256": "515ba4d0a40fb7a0cc074d4c0f5e749a71faf562de7c6d48e3dd65d5568127d1"
+    },
+    {
+      "path": "runtime/apollo/tests/run_policy_reflection_test.cc",
+      "bytes": 2672,
+      "sha256": "839c7c8ebdf8496061a24ca29d591470229cbeb44c7991a5cdb2113abfc7c4c9"
+    },
+    {
+      "path": "runtime/apollo/tests/runtime_config_test.cc",
+      "bytes": 5904,
+      "sha256": "6ce33523f68c0d8ea845e0b4c26b765b33dbdc8792723646cc862518a38408ae"
+    },
+    {
+      "path": "runtime/apollo/tests/strategy_core_test.cc",
+      "bytes": 17031,
+      "sha256": "6ea9d39d1ba6368a2bdbe5b748b46fee302b6b017a6765726c787a8e348343bd"
+    },
+    {
+      "path": "runtime/apollo/tests/team_comm_strategy_test.cc",
+      "bytes": 5416,
+      "sha256": "a20a65ae117b9e20ea071dcc394cca8c7562b4748d3321b9b40c01cb02765ed9"
+    },
+    {
+      "path": "runtime/apollo/tests/team_tactics_test.cc",
+      "bytes": 32941,
+      "sha256": "4287ee8c1318a9de5cac77f6df11f69b6e4fdae928561761e9d0f784ba95e880"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "repository": "https://github.com/XiangruiJiang/ApolloCodebase",
+  "commit": "71018c968969d6e55130b0e1987cd5b4f5c3b4df",
+  "license": "GPL-3.0-or-later (see LICENSE.md and source SPDX identifiers)",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10333,
+      "sha256": "36a7b25b80541e4097b42c2f83370364f6c03d24c0da4ac7aff64e8e33dda120"
+    },
+    {
+      "path": "assets/keyframes/neutral.yaml",
+      "bytes": 384,
+      "sha256": "3e58524270bbcc3a5fd0646a9edcbf08190b984242626117cead7ac8b3e220a6"
+    },
+    {
+      "path": "assets/networks/getup/policy.onnx",
+      "bytes": 825546,
+      "sha256": "ae6ade761e50fccb432e118cebd456d9e96e87de0fa3a3adc2d5f92ef496a83d"
+    },
+    {
+      "path": "assets/networks/walk/policy.onnx",
+      "bytes": 844497,
+      "sha256": "6df65fa7d36fd4989fcb022e385de797d51f35c8375532841034716e4bc0d850"
+    },
+    {
+      "path": "src/app/agent_app.cc",
+      "bytes": 5908,
+      "sha256": "2f03abc8547b9ecffa039d264e679ee53b4d374eafc711579aa63609f5ba74c0"
+    },
+    {
+      "path": "src/app/agent_app.h",
+      "bytes": 1896,
+      "sha256": "00ef1acde6941aab08968e358af56636a389f6136ffb14f3d6327c3a852fc0b0"
+    },
+    {
+      "path": "src/app/runtime_config.cc",
+      "bytes": 1711,
+      "sha256": "8f1c02dd38ea8e958836639e1bdada42f6a2f164a89ae381b5d7efb7d8fc9d54"
+    },
+    {
+      "path": "src/app/runtime_config.h",
+      "bytes": 1291,
+      "sha256": "ee99d650997735766cada7a132e140c5445206fbf99872adf8df2adf728e15aa"
+    },
+    {
+      "path": "src/behavior/getup_runner.cc",
+      "bytes": 3126,
+      "sha256": "a5df65beb103ab004ec3d70168fcd0b82b9ada9966ff8d2d3f2d3d59fd33245d"
+    },
+    {
+      "path": "src/behavior/getup_runner.h",
+      "bytes": 1636,
+      "sha256": "855ea69a0efce95351b82f9ca1ca1d162d15eeeee69c7bf041d527ede22fb10a"
+    },
+    {
+      "path": "src/behavior/keyframe_runner.cc",
+      "bytes": 3538,
+      "sha256": "12f8819189c77def446bf9a7879a0b6adcf00daf78ae09a442b25097012e36ed"
+    },
+    {
+      "path": "src/behavior/keyframe_runner.h",
+      "bytes": 1467,
+      "sha256": "e50591ce779ec5be6d1ae22922a6d6c612d8193f931c101a1ee0905a827abab0"
+    },
+    {
+      "path": "src/behavior/motion_manager.cc",
+      "bytes": 2726,
+      "sha256": "42bd15114fe1922f93d3beeb8ca3bea92e519b29549434427b18e191dfb84551"
+    },
+    {
+      "path": "src/behavior/motion_manager.h",
+      "bytes": 1773,
+      "sha256": "8cc6af00ec5bc7ae789b966c2daa22ae7b03418a4c7d31e4b176db47cb0718cf"
+    },
+    {
+      "path": "src/behavior/onnx_session.cc",
+      "bytes": 4387,
+      "sha256": "0a4fb50c40a080f3ac3fa8d836ac21d6057f454d914d666e41df40515262c1a1"
+    },
+    {
+      "path": "src/behavior/onnx_session.h",
+      "bytes": 1237,
+      "sha256": "69e3f8077476c465ef4426df0b117617d936ffffbcbed9ed18cdd44058f34f83"
+    },
+    {
+      "path": "src/behavior/policy_common.h",
+      "bytes": 4314,
+      "sha256": "45342efe3c7102fcf9da1f06c281d1f5a0ba33000d62df0f8f8a986ed986884f"
+    },
+    {
+      "path": "src/behavior/walk_runner.cc",
+      "bytes": 9010,
+      "sha256": "ac70c8dfc593732863721115ab54f6394cd833583b05f2c2db19e2674387f830"
+    },
+    {
+      "path": "src/behavior/walk_runner.h",
+      "bytes": 2145,
+      "sha256": "51a6f562a38b6f3fcce496e406aac67304e34fb74af621cfa9b288efea060980"
+    },
+    {
+      "path": "src/comm/team_comm_codec.cc",
+      "bytes": 5096,
+      "sha256": "f0240418f707651d3a7c502ae0181960d0fa71fdf13d8a0db42cb7f432736aa0"
+    },
+    {
+      "path": "src/comm/team_comm_codec.h",
+      "bytes": 856,
+      "sha256": "0eba185e5ed44cce4e09fd907fc449c750819e6a1c3f71c3a85015cbeb1feedc"
+    },
+    {
+      "path": "src/comm/team_comm_manager.cc",
+      "bytes": 3208,
+      "sha256": "244dd4061d8fcd2e36460f9a2ce6073d778152b13746807c9f574b22cef8e36d"
+    },
+    {
+      "path": "src/comm/team_comm_manager.h",
+      "bytes": 1217,
+      "sha256": "a27c3b8eec9af98d61f5c1268eb2b9ff5b2a7756db7f3c6752b6c8c85f7043cf"
+    },
+    {
+      "path": "src/comm/team_comm_types.h",
+      "bytes": 1279,
+      "sha256": "9179f0ff2afceb0c402b6349064d2564a7d97ed5928c76e30836309ad41995c6"
+    },
+    {
+      "path": "src/decision/behavior_nodes.h",
+      "bytes": 4490,
+      "sha256": "4fc5e0f010ce0717406fac9c36a7d04d35e2583f26066d432cdc0677e607bcfc"
+    },
+    {
+      "path": "src/decision/behavior_tree.cc",
+      "bytes": 12348,
+      "sha256": "bcfa969a2e361b922800b2a0f914e256ee8f18cafb80785f1508b911aa2db86f"
+    },
+    {
+      "path": "src/decision/behavior_tree.h",
+      "bytes": 646,
+      "sha256": "3c0cf72b5524a7b93aec850ff098a427b5275a9d02d3b1e930e707c59cca8795"
+    },
+    {
+      "path": "src/decision/blackboard.cc",
+      "bytes": 409,
+      "sha256": "779dddfc88617214cd6baf4e126a911513c7842c5cffab83aba981e9930de01f"
+    },
+    {
+      "path": "src/decision/blackboard.h",
+      "bytes": 1081,
+      "sha256": "1c22b09decf92f0ef54e802616bb3055c0a21ba395ec413c3ba1c3f67de3bb81"
+    },
+    {
+      "path": "src/decision/decision_manager.cc",
+      "bytes": 546,
+      "sha256": "9d3cfdb0b3b6c7a78db605817dff787401f76f1698b6fee68b0ab32e1d49982e"
+    },
+    {
+      "path": "src/decision/decision_manager.h",
+      "bytes": 780,
+      "sha256": "74f49102765aade37d5adf3d540625c6873c82b9fd0f13b0671b17cb27c7b649"
+    },
+    {
+      "path": "src/decision/field_geometry.h",
+      "bytes": 13961,
+      "sha256": "00af82738b182007608407c3d23a911e32e222bba732cf55d18e5140094e5f40"
+    },
+    {
+      "path": "src/decision/formation.cc",
+      "bytes": 19480,
+      "sha256": "2e074ded1612437ce89bdc692099328615b5e634ef8a3113151cc04e480a80ad"
+    },
+    {
+      "path": "src/decision/formation.h",
+      "bytes": 824,
+      "sha256": "af032c2ef9559f3e54590f7515d7365ce62ac6d5f9f0ebb91456c86b0445783d"
+    },
+    {
+      "path": "src/decision/high_level_command.h",
+      "bytes": 1058,
+      "sha256": "8374a0fe00b9e507e776f78c2f8c769ecda4a131dc7c121734bc524ae5b8ffd3"
+    },
+    {
+      "path": "src/decision/opponent_view.h",
+      "bytes": 1840,
+      "sha256": "67591bd2759c29fafbc3ad2b5d6f2d1099389564abc26fc6cb397d15d155a4ae"
+    },
+    {
+      "path": "src/decision/role_behaviors.cc",
+      "bytes": 18948,
+      "sha256": "52543044479b1c910c61471bdf49ba219b996576bf610eaf9413d61f782a28fb"
+    },
+    {
+      "path": "src/decision/role_behaviors.h",
+      "bytes": 2766,
+      "sha256": "0f304725359005a017a9ff7d774fc7b12c599c5baf5a09d27a263d1c1f23b904"
+    },
+    {
+      "path": "src/decision/role_manager.h",
+      "bytes": 3540,
+      "sha256": "8d1f265ed45a51cebc85445dcad92b30794143701e01e0b44aa2cb97ea94fa81"
+    },
+    {
+      "path": "src/decision/role_manager_assignment.cc",
+      "bytes": 6415,
+      "sha256": "95b7cb1c256c4e8eb63e49641b57b30122eb114928de40b528208c2fb0305d4c"
+    },
+    {
+      "path": "src/decision/role_manager_core.cc",
+      "bytes": 12570,
+      "sha256": "3afdb5d5cfc4f8f5ad299c8293f5d093d996b896542552a783af585157548816"
+    },
+    {
+      "path": "src/decision/walk_planner.cc",
+      "bytes": 19826,
+      "sha256": "b171e63bd587dab30857547324615dc60d5150636da7414db7b7cf5a0869adaf"
+    },
+    {
+      "path": "src/decision/walk_planner.h",
+      "bytes": 946,
+      "sha256": "1aa049f7519264717c355c1cb0c6245056895e086cb92c6f5f2cd86a9154d40b"
+    },
+    {
+      "path": "src/math/math_utils.h",
+      "bytes": 6270,
+      "sha256": "c88877b02e47d7a6f40abe5d48f4dac9c87c93c521976cfde08df0a355ca62fb"
+    },
+    {
+      "path": "src/robot/joint_targets.h",
+      "bytes": 591,
+      "sha256": "6641eff24f0a61924641a8291885a464c4353c8d258b313b1683dc913aff8346"
+    },
+    {
+      "path": "src/robot/t1_robot_model.cc",
+      "bytes": 6229,
+      "sha256": "c5f014f47eb844adbd69188e3b658607e4d5c921d779a4396956aa684186b816"
+    },
+    {
+      "path": "src/robot/t1_robot_model.h",
+      "bytes": 2074,
+      "sha256": "0b2814e31da141e19b1651b00baa77869a0e23dae6af4ca21d27b2ec25c72296"
+    },
+    {
+      "path": "src/server/action_encoder.cc",
+      "bytes": 6851,
+      "sha256": "713fcd6e2edc9714a2f1a29170f29d74719d62aba23e1e36f1bfb65ca3a70f8d"
+    },
+    {
+      "path": "src/server/action_encoder.h",
+      "bytes": 1392,
+      "sha256": "7a1bbaf4db25de6c9d05a0909b6eaca2b116a6961b8441740f8533503db9ce85"
+    },
+    {
+      "path": "src/server/perception_parser.cc",
+      "bytes": 11940,
+      "sha256": "1268a3d0360ef04dac279b7401034a67d6f0f255afda49816c0605789fdc8755"
+    },
+    {
+      "path": "src/server/perception_parser.h",
+      "bytes": 534,
+      "sha256": "cc21e05f352867bbca0c48c4e5ba159ef98b2479c8696e4d7c5d3225020ccb2a"
+    },
+    {
+      "path": "src/server/perception_types.h",
+      "bytes": 2579,
+      "sha256": "33b64cc21a9f91930ab1bfaf7389b6ec7b43b6706e22c53f70bae9649804fef8"
+    },
+    {
+      "path": "src/server/server_constants.h",
+      "bytes": 2984,
+      "sha256": "22224fa801aaf10cc7d8c159a5b85390e4994f00468219d7903c42efbd125c1a"
+    },
+    {
+      "path": "src/server/tcp_lpm_client.cc",
+      "bytes": 5351,
+      "sha256": "01245b290a2caabb646be760d1ba1dc75946008c71787081659bb25c363e3fd0"
+    },
+    {
+      "path": "src/server/tcp_lpm_client.h",
+      "bytes": 1278,
+      "sha256": "b9c241a8973b0ef39dcba4b080114fee29641e66308227497f82038198dff943"
+    },
+    {
+      "path": "src/world/ball_kalman.h",
+      "bytes": 5055,
+      "sha256": "90c922a984b84985539d5310893529420c713e8c1d052ca9f9204f6bfbd7dd12"
+    },
+    {
+      "path": "src/world/frame_normalizer.cc",
+      "bytes": 1323,
+      "sha256": "69d0633f7b4d9f8b24619b9bc6fe7b99600ad076d0126d80c094ab8264c9c2d3"
+    },
+    {
+      "path": "src/world/frame_normalizer.h",
+      "bytes": 993,
+      "sha256": "b2b6699dbf41e0a124a42a350e441fc89557f74120c36aac8328c2d615129a40"
+    },
+    {
+      "path": "src/world/play_mode.cc",
+      "bytes": 4707,
+      "sha256": "02e3b251c0e7a06a1a79369e4de0ad9a6852d2de5d60deac0f973ba479877267"
+    },
+    {
+      "path": "src/world/play_mode.h",
+      "bytes": 1198,
+      "sha256": "e6cb11c6cfa76d0119a8fd366ffe11d3bebbffca8f03a7d1a57ab011551bd58f"
+    },
+    {
+      "path": "src/world/world_snapshot.h",
+      "bytes": 2057,
+      "sha256": "17301852516f381d06122defef8f58b5359a8aacfc1ad79eb735cd7b0ef4d46b"
+    },
+    {
+      "path": "src/world/world_state.cc",
+      "bytes": 33209,
+      "sha256": "739b625851fb559aba1fb82f2fab9557b8be29077fe73d6d66697f610d38532f"
+    },
+    {
+      "path": "src/world/world_state.h",
+      "bytes": 1939,
+      "sha256": "57a4ff45bf27bdfa42e4897a5bedef792a3b271d37acc2532fd5d546eb838577"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 6041,
+      "sha256": "e154d491ae438a1c368e18bd5133935a59523ab5d0422f9431631d7dc5ef6708"
+    },
+    {
+      "path": "main.cc",
+      "bytes": 615,
+      "sha256": "6877905018f1ef55abc4316b7a6bdcf217d87654a97f84694e51da8a945c2789"
+    },
+    {
+      "path": "start.sh",
+      "bytes": 680,
+      "sha256": "f14ba4b8c6adf989934338c33b646c26101b5ea3e72f3589ac77b05ec2a3c7e5"
+    },
+    {
+      "path": "start_opponent.sh",
+      "bytes": 717,
+      "sha256": "7b27252fa0dc7924e02d802ded67e22a11431672ec02013034643ae68822a7a3"
+    },
+    {
+      "path": "kill.sh",
+      "bytes": 501,
+      "sha256": "864d27d25716be709419ed93e30c8713e3ad276de5b649727ef01c4966c12737"
+    },
+    {
+      "path": "pack.sh",
+      "bytes": 3842,
+      "sha256": "b7301ad277f9798b68d13af75c0a3fe8b98181f243d5a034a9ddb809f711fa3d"
+    }
+  ]
+}

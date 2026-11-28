@@ -11,3 +11,10 @@ outputs/
 Thumbs.db
 .idea/
 .vscode/
+competition/output/
+competition/tmp/
+competition/.runtime/
+competition/third_party/*
+!competition/third_party/apollo/
+competition/third_party/apollo/build/
+competition/third_party/apollo/cpp_deps/

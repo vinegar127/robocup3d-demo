@@ -3,3 +3,8 @@
 *.md text eol=lf
 *.html text eol=lf
 *.yml text eol=lf
+
+# Preserve pinned upstream bytes so its per-file SHA-256 manifest stays valid.
+competition/third_party/apollo/** -text -whitespace
+# Historical patch context lines intentionally contain a single space.
+competition/docs/experiments/*.patch -whitespace

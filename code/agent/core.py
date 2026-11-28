@@ -206,6 +206,7 @@ class Command:
     joint_targets: Dict[str, float] = field(default_factory=dict)  # 目标关节角（度）
     say: Optional[str] = None          # 要说的话（有带宽限制！）
     reset: bool = False                # 摔倒后请求站起来
+    kick_power: float = 0.0            # 教学模型：本周期触球冲量（0 表示不触球）
 
     def clamp_to(self, limits: Dict[str, Tuple[float, float]]) -> "Command":
         """把指令裁剪到关节允许范围内 —— 防止把非法值发给服务器被判罚。"""
@@ -281,7 +282,7 @@ class Situation:
             s.goal_dist = goal.dist
             s.goal_azimuth = goal.azimuth
 
-        # 判断是否在射门范围内：球近 + 朝向球门
+        # 这里只判断球近且在身体前方；具体起脚站位、朝向由 agent 检查。
         if s.ball_visible:
             s.in_shooting_range = s.ball_dist < 0.75 and abs(s.ball_azimuth) < 35.0
         return s

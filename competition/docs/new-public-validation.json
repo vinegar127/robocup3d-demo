@@ -1,0 +1,5388 @@
+{
+  "exported_at_utc": "2026-11-02T16:09:41.704516+00:00",
+  "series_result": "output\\benchmarks\\public-svrac4w1\\result.json",
+  "series_results": {
+    "my3d": {
+      "wins": 1,
+      "draws": 1,
+      "losses": 0,
+      "invalid": 0,
+      "goals_for": 2,
+      "goals_against": 1,
+      "all_healthy": true,
+      "series_won": true
+    },
+    "retricato": {
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "invalid": 0,
+      "goals_for": 9,
+      "goals_against": 0,
+      "all_healthy": true,
+      "series_won": true
+    }
+  },
+  "series_passed": true,
+  "team_source_sha256": {
+    "team/__init__.py": "6bc9ad45e2a398807687d1fbec75a9e520362e16c158f3b342db43936c15b8c2",
+    "team/agent.py": "a0a2ece971298f03796728314ebba3d9a34b288f1e45e392875f26a7510b4332",
+    "team/behavior.py": "ef9d39ed04cc9a934c22009c6711c2ddb49177970827809dd844e6e9d8d79ee4",
+    "team/communication.py": "1e38ea4322883397b7102172b19d347334bdf8224730dc7fcf933d5fd15a8c2a",
+    "team/config.json": "fe1ef959c9cfa0106fd478d5f6bbb3403aec9a97eb76f3f4137d5470cf5a8c35",
+    "team/geometry.py": "8b2c06ee776f11b5dcc0510a7e4630d1538c4985bcbca77e99cf31b415b161d7",
+    "team/launch.py": "bfcec8d6ca37dac700e2593eb0a8de5eaf75eac6343e8a1e6f768f58c8fb9e39",
+    "team/motion.py": "2a0b481bf1354400c67b1be5ae8ea935e43dafe1a55149817956544b28bee1bf",
+    "team/protocol.py": "56db22345eef6e8e5e77206c8c4bfbb7ca1901a98bc75df6d31d7838ca49ba79",
+    "team/strategy.py": "913cf9ebd7d192f5cad47174f7ec2bbad47c5ae67da9c81e993946151b9a57f1",
+    "team/strike.py": "16a9eba840affc1bacb5c6633c2fa231deb7cc0c7215f878605ba998e9afd6e4",
+    "team/world.py": "8341442f6187921e5d29ca9270779cd3c92f11d5cd50d074ecb3450b08228641"
+  },
+  "matches": [
+    {
+      "directory": "E:\\3d\u4eff\u771f\\output\\evaluations\\match-hda93g1u",
+      "report": {
+        "scenario": "match",
+        "sim_seconds": 600.0,
+        "score": [
+          2,
+          1
+        ],
+        "max_ball_x": 28.34509590993129,
+        "contacts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "max_attack_progress": 28.34509590993129,
+        "mirror": false,
+        "max_ball_speed": 5.860155925400655,
+        "contact_history": [
+          {
+            "time": 1.06,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -0.0009575266468283669,
+              -0.01612435259484485,
+              0.11071800305728136
+            ]
+          },
+          {
+            "time": 10.5,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              4.703801325222839,
+              -3.0891404420746187,
+              0.11851858521267744
+            ]
+          },
+          {
+            "time": 10.58,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              4.9406734002571095,
+              -3.048415215145316,
+              0.20986290091955823
+            ]
+          },
+          {
+            "time": 11.34,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              8.589295039487256,
+              -2.5540708109167207,
+              0.2714747666984693
+            ]
+          },
+          {
+            "time": 13.66,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              4.327808150139513,
+              -3.0655289136532358,
+              0.11778544322811858
+            ]
+          },
+          {
+            "time": 21.3,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              1.659275000714837,
+              -0.37473066645539543,
+              0.11150527906762872
+            ]
+          },
+          {
+            "time": 24.22,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              1.9053442274308012,
+              -0.02769790449752843,
+              0.16028153993788807
+            ]
+          },
+          {
+            "time": 42.6,
+            "side": 1,
+            "number": 3,
+            "ball": [
+              10.9365405726511,
+              5.039719053623324,
+              0.13007636933578642
+            ]
+          },
+          {
+            "time": 43.6,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              8.679940322736908,
+              5.331480501605034,
+              0.13105603760830187
+            ]
+          },
+          {
+            "time": 53.96,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              8.950326330754688,
+              6.26584205896723,
+              0.1461118198530648
+            ]
+          },
+          {
+            "time": 76.16,
+            "side": 1,
+            "number": 3,
+            "ball": [
+              16.33637382867609,
+              2.73095977832402,
+              0.11594846308834551
+            ]
+          },
+          {
+            "time": 82.9,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              17.249853444265934,
+              2.9860168941295795,
+              0.1600544805855237
+            ]
+          },
+          {
+            "time": 93.38,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              22.619381767607976,
+              3.5715938570575525,
+              0.11031884372569094
+            ]
+          },
+          {
+            "time": 123.74,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              23.408260835364953,
+              2.536229630658964,
+              0.11322290528333559
+            ]
+          },
+          {
+            "time": 140.68,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -0.03989821667627605,
+              -0.012550070057078326,
+              0.13684291202297
+            ]
+          },
+          {
+            "time": 147.44,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -0.699355745120581,
+              -0.3868570005745273,
+              0.14495650503589158
+            ]
+          },
+          {
+            "time": 157.64,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              7.310062692596522,
+              -1.0636874648957038,
+              0.11324534966626343
+            ]
+          },
+          {
+            "time": 174.4,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -1.5025497879238021,
+              3.110588602555501,
+              0.10925550547319723
+            ]
+          },
+          {
+            "time": 185.76,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              0.33785063529823867,
+              6.125991932535041,
+              0.10986807739510204
+            ]
+          },
+          {
+            "time": 191.1,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              3.443701560442097,
+              3.4205943889880817,
+              0.11999581989117879
+            ]
+          },
+          {
+            "time": 204.5,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              4.479746020724663,
+              3.545350644353745,
+              0.14030662689499157
+            ]
+          },
+          {
+            "time": 228.24,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              25.141933818288457,
+              -2.9939975314963427,
+              0.13138553141857717
+            ]
+          },
+          {
+            "time": 235.94,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              23.811662640076165,
+              -3.8349754410687806,
+              0.16248074340970675
+            ]
+          },
+          {
+            "time": 251.52,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -0.015677448505272976,
+              -0.009124444350245788,
+              0.11196886701517615
+            ]
+          },
+          {
+            "time": 259.08,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -0.12854619015723717,
+              -0.1536232321760999,
+              0.14373889816760355
+            ]
+          },
+          {
+            "time": 266.96,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              4.91424179233821,
+              -0.4499634778627317,
+              0.1064340242318516
+            ]
+          },
+          {
+            "time": 280.02,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              0.6947179579784685,
+              2.5629455364939933,
+              0.14367542027150867
+            ]
+          },
+          {
+            "time": 280.38,
+            "side": 1,
+            "number": 3,
+            "ball": [
+              1.663897308422293,
+              2.4603138291815028,
+              0.14162486744135488
+            ]
+          },
+          {
+            "time": 289.54,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              2.6137526575500916,
+              -0.8431923852933656,
+              0.14067777675442683
+            ]
+          },
+          {
+            "time": 315.64,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -0.045301098961720146,
+              -0.0042048873935207395,
+              0.1325671686945215
+            ]
+          },
+          {
+            "time": 363.2,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -22.43705971973013,
+              -4.106448608539912,
+              0.11861323101620568
+            ]
+          },
+          {
+            "time": 371.26,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -25.43697102002948,
+              0.00398223507610843,
+              0.13341661279905792
+            ]
+          },
+          {
+            "time": 378.18,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -23.242221040972137,
+              0.1605222247990935,
+              0.11957580734357263
+            ]
+          },
+          {
+            "time": 388.22,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -24.709562628246164,
+              2.9573347621052473,
+              0.1514669509910882
+            ]
+          },
+          {
+            "time": 396.44,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -20.261379201889962,
+              4.337443529608712,
+              0.12072504111258188
+            ]
+          },
+          {
+            "time": 406.6,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -14.84448404750713,
+              8.408263117178855,
+              0.13126765870809307
+            ]
+          },
+          {
+            "time": 417.68,
+            "side": 1,
+            "number": 3,
+            "ball": [
+              -7.191214144719338,
+              4.153537535937815,
+              0.11379090427792378
+            ]
+          },
+          {
+            "time": 430.96,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -15.358521726223968,
+              2.141914441343006,
+              0.11004812195072489
+            ]
+          },
+          {
+            "time": 453.18,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -25.034140550814104,
+              2.540058901201109,
+              0.17495408519957972
+            ]
+          },
+          {
+            "time": 461.24,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -21.661763035955556,
+              1.7223371836051822,
+              0.15242533086396082
+            ]
+          },
+          {
+            "time": 478.22,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -16.551453046523253,
+              1.9049127459188524,
+              0.11256620228852908
+            ]
+          },
+          {
+            "time": 478.92,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -17.07594641323377,
+              1.7618679451759505,
+              0.11529334877052223
+            ]
+          },
+          {
+            "time": 478.98,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -17.088905785840453,
+              1.7562578832431075,
+              0.14000021003818694
+            ]
+          },
+          {
+            "time": 479.08,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -17.08181864164262,
+              1.7974784945053077,
+              0.1276000322969784
+            ]
+          },
+          {
+            "time": 479.16,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -17.090560994068213,
+              1.8226237821438236,
+              0.13630465085987623
+            ]
+          },
+          {
+            "time": 479.22,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -17.085811506212885,
+              1.8359526515486042,
+              0.11176610709993601
+            ]
+          },
+          {
+            "time": 479.36,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -17.053760986101658,
+              1.7707099460530005,
+              0.09892725399364267
+            ]
+          },
+          {
+            "time": 479.46,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -16.983209928773665,
+              1.763860302267643,
+              0.1038549704641368
+            ]
+          },
+          {
+            "time": 485.48,
+            "side": 1,
+            "number": 3,
+            "ball": [
+              -22.055943754777786,
+              2.3750847117905525,
+              0.11330320571138437
+            ]
+          },
+          {
+            "time": 501.74,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              0.020072200324995987,
+              -0.034371082231178546,
+              0.12581685976382673
+            ]
+          },
+          {
+            "time": 523.22,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              0.7073325449298384,
+              -1.1400646127822598,
+              0.10984075037625245
+            ]
+          },
+          {
+            "time": 536.78,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -1.1707148831258114,
+              1.321602299150208,
+              0.1421088768019332
+            ]
+          },
+          {
+            "time": 544.76,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              2.378168249258356,
+              -0.32393376456689177,
+              0.10760348869918603
+            ]
+          },
+          {
+            "time": 545.98,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              3.49172915394919,
+              -0.1732189529937084,
+              0.12937986181170594
+            ]
+          },
+          {
+            "time": 553.4,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              8.489748701749084,
+              -0.7521009754241437,
+              0.12059386071092387
+            ]
+          },
+          {
+            "time": 560.4,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              9.615456569808131,
+              -1.6995913459453176,
+              0.1089840719580777
+            ]
+          },
+          {
+            "time": 561.06,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              9.932843174965882,
+              -1.5206310883253318,
+              0.12765764663573803
+            ]
+          },
+          {
+            "time": 569.84,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.391777025666732,
+              -0.32085522700883823,
+              0.12396931789719383
+            ]
+          },
+          {
+            "time": 569.96,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              7.468036090470322,
+              -0.3860173007500408,
+              0.12197781426795061
+            ]
+          },
+          {
+            "time": 570.12,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.470690572509495,
+              -0.32133568903664006,
+              0.1521649959276016
+            ]
+          },
+          {
+            "time": 574.18,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              10.40866311482404,
+              2.0609637685909674,
+              0.11319851741020426
+            ]
+          },
+          {
+            "time": 577.36,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              10.038315705980352,
+              1.7083578309621117,
+              0.1513589805325424
+            ]
+          },
+          {
+            "time": 586.8,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              13.682593935076994,
+              0.7623253476485867,
+              0.15535524738250117
+            ]
+          },
+          {
+            "time": 593.18,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              13.419568646182428,
+              1.323981959498079,
+              0.12778567088460893
+            ]
+          }
+        ],
+        "modes": [
+          "BeforeKickOff",
+          "GameOver",
+          "Goal_Left",
+          "Goal_Right",
+          "KickOff_Left",
+          "KickOff_Right",
+          "PlayOn",
+          "free_kick_right",
+          "goal_kick_left"
+        ],
+        "recovery_peak_height": 0.0,
+        "completed_two_halves": true,
+        "half_seconds": 300,
+        "official_half_length": true,
+        "samples": 3000,
+        "opponent": "my3d",
+        "our_side": 0,
+        "requested_our_side": 0,
+        "seed": 61,
+        "initial_sim_time": 146.61999999993915,
+        "field_dimensions": [
+          55,
+          36,
+          40
+        ],
+        "goal_dimensions": [
+          1,
+          3.66,
+          1.83
+        ],
+        "rules": {
+          "max_team_size": 7,
+          "max_player_no": 99,
+          "half_time": 300,
+          "extra_half_time": 180,
+          "penalty_shooting_time": 60,
+          "kick_off_time": 15,
+          "throw_in_time": 15,
+          "corner_kick_time": 15,
+          "goal_kick_time": 15,
+          "free_kick_time": 15,
+          "direct_free_kick_time": 15,
+          "goal_pause_time": 3,
+          "throw_in_wait_time": 1,
+          "ground_max_time": 15,
+          "goalie_ground_max_time": 30,
+          "not_standing_max_time": 30,
+          "goalie_not_standing_max_time": 60,
+          "default_field_version": "fifa7vs7"
+        },
+        "public_configuration": "upstream default",
+        "source_manifest": "source_manifest.json",
+        "opening_legal": true,
+        "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12",
+        "public_healthy": true,
+        "our_goals": 2,
+        "opponent_goals": 1,
+        "won": true,
+        "messages_received": 30084,
+        "recoveries": 6,
+        "goals": 3,
+        "validated": true
+      },
+      "clients": [
+        {
+          "team": "StudyBlue",
+          "number": 1,
+          "role": "goalkeeper",
+          "frames": 30082,
+          "joint_commands": 691886,
+          "beams": 4,
+          "fallen_frames": 125,
+          "error": null,
+          "side": "left",
+          "min_height": 0.206,
+          "distance_walked": 92.28468480743211,
+          "ball_observations": 14523,
+          "start_position": [
+            -24.998,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            -25.544,
+            0.052,
+            0.655
+          ],
+          "states": {
+            "READY": 535,
+            "GOALKEEPER": 25064,
+            "DEFEND": 1890,
+            "ALIGN_PASS": 1719,
+            "PASS": 133,
+            "PASS_RELEASE": 209,
+            "GET_UP": 160,
+            "ALIGN_CLEAR": 316,
+            "CLEAR": 54,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 2,
+          "recovery_attempts": 2,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4298,
+          "elapsed_seconds": 890.89
+        },
+        {
+          "team": "StudyBlue",
+          "number": 2,
+          "role": "left_defender",
+          "frames": 30082,
+          "joint_commands": 691886,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.636,
+          "distance_walked": 117.30108815698007,
+          "ball_observations": 14967,
+          "start_position": [
+            -16.998,
+            8.0,
+            0.665
+          ],
+          "end_position": [
+            -5.206,
+            8.422,
+            0.656
+          ],
+          "states": {
+            "READY": 535,
+            "DEFEND": 29511,
+            "ALIGN_PASS": 34,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4298,
+          "elapsed_seconds": 890.89
+        },
+        {
+          "team": "StudyBlue",
+          "number": 3,
+          "role": "right_defender",
+          "frames": 30083,
+          "joint_commands": 691909,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.612,
+          "distance_walked": 129.79990668361336,
+          "ball_observations": 14883,
+          "start_position": [
+            -16.997,
+            -8.0,
+            0.665
+          ],
+          "end_position": [
+            -5.22,
+            -7.651,
+            0.656
+          ],
+          "states": {
+            "READY": 536,
+            "DEFEND": 28797,
+            "RECEIVE_PASS": 43,
+            "ALIGN_PASS": 141,
+            "ALIGN_DRIBBLE": 544,
+            "DRIBBLE": 20,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4298,
+          "elapsed_seconds": 890.906
+        },
+        {
+          "team": "StudyBlue",
+          "number": 4,
+          "role": "left_midfielder",
+          "frames": 30082,
+          "joint_commands": 691886,
+          "beams": 4,
+          "fallen_frames": 64,
+          "error": null,
+          "side": "left",
+          "min_height": 0.217,
+          "distance_walked": 155.0060415927905,
+          "ball_observations": 14698,
+          "start_position": [
+            -10.998,
+            6.0,
+            0.665
+          ],
+          "end_position": [
+            0.792,
+            6.422,
+            0.656
+          ],
+          "states": {
+            "READY": 535,
+            "SUPPORT": 27979,
+            "ALIGN_PASS": 1105,
+            "PASS": 53,
+            "KICK": 16,
+            "PASS_RELEASE": 98,
+            "GET_UP": 84,
+            "RECEIVE_PASS": 210,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 1,
+          "recovery_attempts": 1,
+          "kicks": 1,
+          "messages_sent": 716,
+          "messages_received": 4298,
+          "elapsed_seconds": 890.875
+        },
+        {
+          "team": "StudyBlue",
+          "number": 5,
+          "role": "right_midfielder",
+          "frames": 30082,
+          "joint_commands": 691886,
+          "beams": 4,
+          "fallen_frames": 46,
+          "error": null,
+          "side": "left",
+          "min_height": 0.094,
+          "distance_walked": 152.68419599265232,
+          "ball_observations": 14522,
+          "start_position": [
+            -10.998,
+            -6.0,
+            0.665
+          ],
+          "end_position": [
+            0.781,
+            -5.648,
+            0.656
+          ],
+          "states": {
+            "READY": 535,
+            "SUPPORT": 26579,
+            "RESTART_CLEARANCE": 750,
+            "ALIGN_DRIBBLE": 1254,
+            "ALIGN_PASS": 603,
+            "GET_UP": 70,
+            "RECEIVE_PASS": 289,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 1,
+          "recovery_attempts": 1,
+          "kicks": 0,
+          "messages_sent": 717,
+          "messages_received": 4297,
+          "elapsed_seconds": 890.812
+        },
+        {
+          "team": "StudyBlue",
+          "number": 6,
+          "role": "left_forward",
+          "frames": 30082,
+          "joint_commands": 691886,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.61,
+          "distance_walked": 174.36409478250408,
+          "ball_observations": 14937,
+          "start_position": [
+            -6.498,
+            5.5,
+            0.665
+          ],
+          "end_position": [
+            5.292,
+            5.92,
+            0.656
+          ],
+          "states": {
+            "READY": 535,
+            "SUPPORT": 27377,
+            "RECEIVE_PASS": 423,
+            "ALIGN_PASS": 520,
+            "ALIGN_DRIBBLE": 1016,
+            "DRIBBLE": 186,
+            "KICK": 16,
+            "SEARCH_BALL": 8,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 1,
+          "messages_sent": 717,
+          "messages_received": 4297,
+          "elapsed_seconds": 890.797
+        },
+        {
+          "team": "StudyBlue",
+          "number": 7,
+          "role": "right_forward",
+          "frames": 30081,
+          "joint_commands": 691863,
+          "beams": 4,
+          "fallen_frames": 153,
+          "error": null,
+          "side": "left",
+          "min_height": 0.214,
+          "distance_walked": 315.20495172477985,
+          "ball_observations": 13826,
+          "start_position": [
+            -0.751,
+            0.0,
+            0.666
+          ],
+          "end_position": [
+            18.067,
+            1.148,
+            0.65
+          ],
+          "states": {
+            "READY": 534,
+            "DRIBBLE": 2152,
+            "ALIGN_DRIBBLE": 12286,
+            "KICK": 297,
+            "ALIGN_SHOOT": 3798,
+            "SHOOT": 458,
+            "SUPPORT": 7163,
+            "RESTART_CLEARANCE": 326,
+            "RECEIVE_PASS": 365,
+            "ALIGN_PASS": 2220,
+            "PASS": 135,
+            "PASS_RELEASE": 155,
+            "GET_UP": 190,
+            "SEARCH_BALL": 1,
+            "GAME_OVER": 1
+          },
+          "score": [
+            2,
+            1
+          ],
+          "recoveries": 2,
+          "recovery_attempts": 2,
+          "kicks": 19,
+          "messages_sent": 716,
+          "messages_received": 4298,
+          "elapsed_seconds": 890.813
+        },
+        {
+          "team": "StudyOrange",
+          "number": 1,
+          "public_opponent": "my3d",
+          "frames": 30054,
+          "motor_frames": 29547,
+          "actions": 30055,
+          "distance_walked": 56.086599737713534,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            26.583,
+            -0.0,
+            0.672
+          ],
+          "end_position": [
+            26.366,
+            -0.059,
+            0.657
+          ],
+          "states": {
+            "BeforeKickOff": 54,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 2,
+          "public_opponent": "my3d",
+          "frames": 30052,
+          "motor_frames": 29546,
+          "actions": 30053,
+          "distance_walked": 292.38691243001807,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            6.5,
+            -5.0,
+            0.672
+          ],
+          "end_position": [
+            12.09,
+            2.614,
+            0.635
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 3,
+          "public_opponent": "my3d",
+          "frames": 30052,
+          "motor_frames": 29546,
+          "actions": 30053,
+          "distance_walked": 283.3130927686905,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            6.5,
+            4.999,
+            0.672
+          ],
+          "end_position": [
+            20.175,
+            0.686,
+            0.659
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 4,
+          "public_opponent": "my3d",
+          "frames": 30053,
+          "motor_frames": 29547,
+          "actions": 30054,
+          "distance_walked": 274.54970392258247,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            12.0,
+            -0.0,
+            0.672
+          ],
+          "end_position": [
+            14.019,
+            -3.666,
+            0.645
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 5,
+          "public_opponent": "my3d",
+          "frames": 30053,
+          "motor_frames": 29547,
+          "actions": 30054,
+          "distance_walked": 290.9748246412364,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            7.0,
+            -0.0,
+            0.672
+          ],
+          "end_position": [
+            17.559,
+            2.615,
+            0.651
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 6,
+          "public_opponent": "my3d",
+          "frames": 30053,
+          "motor_frames": 29547,
+          "actions": 30054,
+          "distance_walked": 270.22274896665755,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.2,
+            -3.0,
+            0.672
+          ],
+          "end_position": [
+            13.38,
+            1.14,
+            0.654
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 7,
+          "public_opponent": "my3d",
+          "frames": 30053,
+          "motor_frames": 29547,
+          "actions": 30054,
+          "distance_walked": 245.85025878643606,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.2,
+            2.999,
+            0.672
+          ],
+          "end_position": [
+            18.991,
+            4.357,
+            0.645
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 96,
+            "PlayOn": 27218,
+            "Goal_Left": 302,
+            "KickOff_Right": 1139,
+            "goal_kick_left": 342,
+            "Goal_Right": 151,
+            "free_kick_right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        }
+      ],
+      "evidence_sha256": {
+        "report.json": "3f2c1d00de265b56b76b217c68e8ad60a54b6d11ecfc2293a5f68e0ae5ebb1ac",
+        "telemetry.json": "17e295f4e8685d4afe54eaf02ebdfe1a3b95fbabc981cba0b503efd44d5b0681",
+        "source_manifest.json": "5c1c131a675012fcc91e5fd696f25c901a5df84841c3a54ec7e9563df8484e07"
+      }
+    },
+    {
+      "directory": "E:\\3d\u4eff\u771f\\output\\evaluations\\match-sg9jub99",
+      "report": {
+        "scenario": "match",
+        "sim_seconds": 600.0,
+        "score": [
+          0,
+          0
+        ],
+        "max_ball_x": 0.309361103042346,
+        "contacts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "max_attack_progress": 27.496960237486164,
+        "mirror": false,
+        "max_ball_speed": 4.207518081097812,
+        "contact_history": [
+          {
+            "time": 3.78,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              0.005915374102278675,
+              -0.008698492144459046,
+              0.11043725431178941
+            ]
+          },
+          {
+            "time": 11.28,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              0.22253739591326682,
+              -0.12755215487365876,
+              0.14790468320510294
+            ]
+          },
+          {
+            "time": 329.94,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -3.36479278740774,
+              -0.4204943693579753,
+              0.15646778555438356
+            ]
+          },
+          {
+            "time": 335.3,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -0.4575013570799435,
+              -2.842487721396775,
+              0.15392808670423846
+            ]
+          },
+          {
+            "time": 338.22,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -7.091165552437567,
+              -1.3997293840206757,
+              0.12406317122837925
+            ]
+          },
+          {
+            "time": 352.22,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -4.348886257646146,
+              -4.399517892086426,
+              0.20053803251531085
+            ]
+          },
+          {
+            "time": 398.42,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -22.332677178545705,
+              -0.5834086103677215,
+              0.14730575118268763
+            ]
+          },
+          {
+            "time": 398.46,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -22.311805103288332,
+              -0.6879504149517219,
+              0.15666618543167604
+            ]
+          },
+          {
+            "time": 399.34,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -22.15474381151096,
+              -2.3310097716261504,
+              0.14844746628004046
+            ]
+          },
+          {
+            "time": 404.56,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -23.207041519024546,
+              -1.9771703352824601,
+              0.18826202377055068
+            ]
+          },
+          {
+            "time": 440.4,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -23.590703197467544,
+              3.614618031176858,
+              0.1646701731583908
+            ]
+          },
+          {
+            "time": 443.3,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -26.42833561031512,
+              2.1134795958636015,
+              0.14419075387162883
+            ]
+          },
+          {
+            "time": 452.84,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -25.92050225573943,
+              5.943886474773323,
+              0.1088196053905747
+            ]
+          },
+          {
+            "time": 473.52,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -25.474632256511278,
+              -0.018353069773727422,
+              0.11988704917327629
+            ]
+          }
+        ],
+        "modes": [
+          "BeforeKickOff",
+          "GameOver",
+          "KickOff_Left",
+          "KickOff_Right",
+          "PlayOn",
+          "free_kick_left",
+          "goal_kick_left"
+        ],
+        "recovery_peak_height": 0.0,
+        "completed_two_halves": true,
+        "half_seconds": 300,
+        "official_half_length": true,
+        "samples": 3000,
+        "opponent": "my3d",
+        "our_side": 1,
+        "requested_our_side": 1,
+        "seed": 62,
+        "initial_sim_time": 117.37999999996573,
+        "field_dimensions": [
+          55,
+          36,
+          40
+        ],
+        "goal_dimensions": [
+          1,
+          3.66,
+          1.83
+        ],
+        "rules": {
+          "max_team_size": 7,
+          "max_player_no": 99,
+          "half_time": 300,
+          "extra_half_time": 180,
+          "penalty_shooting_time": 60,
+          "kick_off_time": 15,
+          "throw_in_time": 15,
+          "corner_kick_time": 15,
+          "goal_kick_time": 15,
+          "free_kick_time": 15,
+          "direct_free_kick_time": 15,
+          "goal_pause_time": 3,
+          "throw_in_wait_time": 1,
+          "ground_max_time": 15,
+          "goalie_ground_max_time": 30,
+          "not_standing_max_time": 30,
+          "goalie_not_standing_max_time": 60,
+          "default_field_version": "fifa7vs7"
+        },
+        "public_configuration": "upstream default",
+        "source_manifest": "source_manifest.json",
+        "opening_legal": true,
+        "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12",
+        "public_healthy": true,
+        "our_goals": 0,
+        "opponent_goals": 0,
+        "won": false,
+        "messages_received": 30054,
+        "recoveries": 0,
+        "goals": 0,
+        "validated": true
+      },
+      "clients": [
+        {
+          "team": "StudyBlue",
+          "number": 1,
+          "role": "goalkeeper",
+          "frames": 30054,
+          "joint_commands": 691242,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 74.56596432190904,
+          "ball_observations": 14293,
+          "start_position": [
+            24.998,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            25.515,
+            0.6,
+            0.655
+          ],
+          "states": {
+            "READY": 54,
+            "DEFEND": 2439,
+            "GOALKEEPER": 27560,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 908.281
+        },
+        {
+          "team": "StudyBlue",
+          "number": 2,
+          "role": "left_defender",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 48.25240650897404,
+          "ball_observations": 15026,
+          "start_position": [
+            16.997,
+            8.0,
+            0.665
+          ],
+          "end_position": [
+            2.808,
+            -6.958,
+            0.655
+          ],
+          "states": {
+            "READY": 53,
+            "DEFEND": 29999,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 715,
+          "messages_received": 4294,
+          "elapsed_seconds": 908.25
+        },
+        {
+          "team": "StudyBlue",
+          "number": 3,
+          "role": "right_defender",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 48.66270749422675,
+          "ball_observations": 15026,
+          "start_position": [
+            16.997,
+            -8.0,
+            0.665
+          ],
+          "end_position": [
+            2.75,
+            9.063,
+            0.656
+          ],
+          "states": {
+            "READY": 53,
+            "DEFEND": 29999,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 715,
+          "messages_received": 4294,
+          "elapsed_seconds": 908.187
+        },
+        {
+          "team": "StudyBlue",
+          "number": 4,
+          "role": "left_midfielder",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.635,
+          "distance_walked": 45.03063437161596,
+          "ball_observations": 15026,
+          "start_position": [
+            10.997,
+            6.0,
+            0.665
+          ],
+          "end_position": [
+            -3.186,
+            -4.958,
+            0.655
+          ],
+          "states": {
+            "READY": 53,
+            "SUPPORT": 29999,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4293,
+          "elapsed_seconds": 908.25
+        },
+        {
+          "team": "StudyBlue",
+          "number": 5,
+          "role": "right_midfielder",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 44.66605051706414,
+          "ball_observations": 15026,
+          "start_position": [
+            10.997,
+            -6.0,
+            0.665
+          ],
+          "end_position": [
+            -3.244,
+            7.049,
+            0.656
+          ],
+          "states": {
+            "READY": 53,
+            "SUPPORT": 29999,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4293,
+          "elapsed_seconds": 908.203
+        },
+        {
+          "team": "StudyBlue",
+          "number": 6,
+          "role": "left_forward",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.621,
+          "distance_walked": 131.64300929771403,
+          "ball_observations": 15023,
+          "start_position": [
+            6.497,
+            5.5,
+            0.665
+          ],
+          "end_position": [
+            -22.663,
+            3.875,
+            0.648
+          ],
+          "states": {
+            "READY": 53,
+            "SUPPORT": 19914,
+            "ALIGN_DRIBBLE": 2213,
+            "DRIBBLE": 721,
+            "KICK": 80,
+            "ALIGN_SHOOT": 6795,
+            "SHOOT": 276,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 5,
+          "messages_sent": 716,
+          "messages_received": 4293,
+          "elapsed_seconds": 908.156
+        },
+        {
+          "team": "StudyBlue",
+          "number": 7,
+          "role": "right_forward",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 1,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.632,
+          "distance_walked": 104.11478666785874,
+          "ball_observations": 14961,
+          "start_position": [
+            6.498,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            -13.405,
+            1.207,
+            0.655
+          ],
+          "states": {
+            "READY": 53,
+            "SUPPORT": 12369,
+            "RESTART_CLEARANCE": 155,
+            "ALIGN_DRIBBLE": 15179,
+            "DRIBBLE": 240,
+            "KICK": 64,
+            "ALIGN_SHOOT": 1594,
+            "SHOOT": 398,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 4,
+          "messages_sent": 716,
+          "messages_received": 4293,
+          "elapsed_seconds": 908.172
+        },
+        {
+          "team": "StudyOrange",
+          "number": 1,
+          "public_opponent": "my3d",
+          "frames": 30121,
+          "motor_frames": 30000,
+          "actions": 30122,
+          "distance_walked": 35.71290244749596,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -26.583,
+            0.0,
+            0.672
+          ],
+          "end_position": [
+            -26.599,
+            0.738,
+            0.654
+          ],
+          "states": {
+            "BeforeKickOff": 121,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 2,
+          "public_opponent": "my3d",
+          "frames": 30119,
+          "motor_frames": 29999,
+          "actions": 30120,
+          "distance_walked": 105.66550592233847,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -18.333,
+            5.4,
+            0.672
+          ],
+          "end_position": [
+            -22.627,
+            4.582,
+            0.657
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 3,
+          "public_opponent": "my3d",
+          "frames": 30120,
+          "motor_frames": 30000,
+          "actions": 30121,
+          "distance_walked": 125.71082035053844,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -18.333,
+            -5.399,
+            0.672
+          ],
+          "end_position": [
+            -22.709,
+            4.289,
+            0.588
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 4,
+          "public_opponent": "my3d",
+          "frames": 30120,
+          "motor_frames": 30000,
+          "actions": 30121,
+          "distance_walked": 118.84984999171397,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -11.0,
+            0.0,
+            0.672
+          ],
+          "end_position": [
+            -22.691,
+            -1.116,
+            0.652
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 5,
+          "public_opponent": "my3d",
+          "frames": 30120,
+          "motor_frames": 30000,
+          "actions": 30121,
+          "distance_walked": 115.20414598698459,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -3.666,
+            7.2,
+            0.672
+          ],
+          "end_position": [
+            -22.622,
+            -1.476,
+            0.657
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 6,
+          "public_opponent": "my3d",
+          "frames": 30120,
+          "motor_frames": 30000,
+          "actions": 30121,
+          "distance_walked": 132.32221934439934,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -1.008,
+            1.2,
+            0.672
+          ],
+          "end_position": [
+            -22.661,
+            1.246,
+            0.656
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 7,
+          "public_opponent": "my3d",
+          "frames": 30120,
+          "motor_frames": 30000,
+          "actions": 30121,
+          "distance_walked": 106.32888415755924,
+          "fallen_frames": 0,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -1.0,
+            -0.5,
+            0.672
+          ],
+          "end_position": [
+            -0.117,
+            0.118,
+            0.655
+          ],
+          "states": {
+            "BeforeKickOff": 120,
+            "KickOff_Left": 186,
+            "PlayOn": 27155,
+            "KickOff_Right": 405,
+            "free_kick_left": 751,
+            "goal_kick_left": 1502,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12"
+        }
+      ],
+      "evidence_sha256": {
+        "report.json": "a834a018c145cc507b593d5e01d68a102400bbcc434b345d84dc1bc01f36d456",
+        "telemetry.json": "7b71fe75758ee6bbaaa4557693420e8098b81260f0e6d7ee5a49b1c61b17cd39",
+        "source_manifest.json": "5c1c131a675012fcc91e5fd696f25c901a5df84841c3a54ec7e9563df8484e07"
+      }
+    },
+    {
+      "directory": "E:\\3d\u4eff\u771f\\output\\evaluations\\match-zq635f0u",
+      "report": {
+        "scenario": "match",
+        "sim_seconds": 600.0,
+        "score": [
+          6,
+          0
+        ],
+        "max_ball_x": 28.364389190766627,
+        "contacts": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "max_attack_progress": 28.364389190766627,
+        "mirror": false,
+        "max_ball_speed": 5.2500329893863364,
+        "contact_history": [
+          {
+            "time": 1.04,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -0.003099518437436258,
+              -0.014242756018317282,
+              0.10901654180964333
+            ]
+          },
+          {
+            "time": 30.24,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              4.7194392504180716,
+              -2.2070112447691317,
+              0.11432047660511169
+            ]
+          },
+          {
+            "time": 38.8,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              2.809503082065978,
+              -1.3816370091657089,
+              0.1093551373438734
+            ]
+          },
+          {
+            "time": 41.28,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              2.800227169081082,
+              -1.337285372318494,
+              0.11146114746064902
+            ]
+          },
+          {
+            "time": 46.1,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              1.700078469540663,
+              -0.43746801902549004,
+              0.11402886502775819
+            ]
+          },
+          {
+            "time": 46.54,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              1.7962528126342527,
+              -0.4739880784927232,
+              0.13664983325907543
+            ]
+          },
+          {
+            "time": 46.6,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              1.8238718184613454,
+              -0.44793471395222784,
+              0.12767612314084914
+            ]
+          },
+          {
+            "time": 46.62,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              1.8380963100208128,
+              -0.4184499874152995,
+              0.13958475182442767
+            ]
+          },
+          {
+            "time": 46.98,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              1.8591043399617908,
+              -0.47695896666749404,
+              0.1180518206618554
+            ]
+          },
+          {
+            "time": 47.02,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              1.8670186936497746,
+              -0.4929683949201296,
+              0.12144997899697607
+            ]
+          },
+          {
+            "time": 47.26,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              1.9716517761963215,
+              -0.5087755905055327,
+              0.11321790329314241
+            ]
+          },
+          {
+            "time": 47.3,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              1.9826849109040139,
+              -0.49096015075508365,
+              0.11966454026690192
+            ]
+          },
+          {
+            "time": 47.46,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              2.054142143251493,
+              -0.5070780211362155,
+              0.1089354359369439
+            ]
+          },
+          {
+            "time": 47.52,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              2.0779288613060225,
+              -0.5267438198962415,
+              0.12381000431219519
+            ]
+          },
+          {
+            "time": 47.56,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              2.071573203754726,
+              -0.5406911569649471,
+              0.11735262933069013
+            ]
+          },
+          {
+            "time": 52.92,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              4.6156289848404075,
+              -1.9402567411514131,
+              0.12516465588910886
+            ]
+          },
+          {
+            "time": 52.98,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              4.560724489869687,
+              -1.939646292285331,
+              0.11990978119415771
+            ]
+          },
+          {
+            "time": 53.28,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              4.6928540853105005,
+              -1.8387725978259117,
+              0.11452359334057571
+            ]
+          },
+          {
+            "time": 53.4,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              4.68057269464426,
+              -1.840896614613159,
+              0.12999662845947607
+            ]
+          },
+          {
+            "time": 53.46,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              4.694406356056012,
+              -1.8155566231595677,
+              0.12389300602891533
+            ]
+          },
+          {
+            "time": 53.52,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              4.661343018490638,
+              -1.7845382295501868,
+              0.10940196288812651
+            ]
+          },
+          {
+            "time": 58.86,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              4.820709748586004,
+              -1.2796913778700072,
+              0.25289852119591777
+            ]
+          },
+          {
+            "time": 58.92,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              4.7710780196223705,
+              -1.3285331709304817,
+              0.22150313000098462
+            ]
+          },
+          {
+            "time": 59.24,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              4.30034193799722,
+              -1.4180176179363122,
+              0.14154478926991207
+            ]
+          },
+          {
+            "time": 60.32,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              4.841068535283099,
+              -1.9458474392973386,
+              0.12055934185785852
+            ]
+          },
+          {
+            "time": 63.14,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              4.882337743653289,
+              -2.078091408755649,
+              0.15058605928987642
+            ]
+          },
+          {
+            "time": 63.22,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              4.936579571440517,
+              -2.1671606215636614,
+              0.17019633872603074
+            ]
+          },
+          {
+            "time": 75.18,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              1.9443532612502885,
+              -5.155535476512018,
+              0.1287726001587365
+            ]
+          },
+          {
+            "time": 75.32,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              2.0102302315156932,
+              -5.045114384409359,
+              0.10396457581405269
+            ]
+          },
+          {
+            "time": 80.58,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              0.9325314335421625,
+              -4.020099265794761,
+              0.13841928977866552
+            ]
+          },
+          {
+            "time": 81.08,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              0.47306038407962636,
+              -3.8260309169902897,
+              0.1130260169028641
+            ]
+          },
+          {
+            "time": 84.3,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              0.2553799888853154,
+              -3.4906057628246083,
+              0.1094869402674321
+            ]
+          },
+          {
+            "time": 89.18,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -0.7851836732381466,
+              -2.6688390636562387,
+              0.11112909267696329
+            ]
+          },
+          {
+            "time": 89.44,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              -0.7145409233236647,
+              -2.687249136084725,
+              0.12088834850550603
+            ]
+          },
+          {
+            "time": 89.58,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -0.7403136914315828,
+              -2.716888194421726,
+              0.11581431951373201
+            ]
+          },
+          {
+            "time": 91.38,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              0.3944930684263138,
+              -3.5820227724815403,
+              0.11255523248376449
+            ]
+          },
+          {
+            "time": 91.62,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              0.8050433491564138,
+              -3.65241341496092,
+              0.1088740880539238
+            ]
+          },
+          {
+            "time": 103.68,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              3.539186673519754,
+              -7.26241272677683,
+              0.17226915458808592
+            ]
+          },
+          {
+            "time": 116.68,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              13.835960526633535,
+              -2.858165316810885,
+              0.13269313753954656
+            ]
+          },
+          {
+            "time": 165.34,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              6.8911377805867895,
+              -0.7367530520682837,
+              0.11044860304130695
+            ]
+          },
+          {
+            "time": 168.02,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              6.68148600825947,
+              -0.8103718231059961,
+              0.1312315532239977
+            ]
+          },
+          {
+            "time": 168.24,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              6.9939866497097976,
+              -0.7954469344349935,
+              0.12060491943101813
+            ]
+          },
+          {
+            "time": 168.48,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              6.88957632937268,
+              -0.912774831635323,
+              0.1100446082080638
+            ]
+          },
+          {
+            "time": 168.54,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              6.879836901677842,
+              -0.8858518117851458,
+              0.10396899354636523
+            ]
+          },
+          {
+            "time": 168.68,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              6.872226825549299,
+              -0.8881389743476942,
+              0.11019814396083508
+            ]
+          },
+          {
+            "time": 254.46,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              13.636834157911924,
+              0.8578374453722196,
+              0.11009065363190759
+            ]
+          },
+          {
+            "time": 254.86,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              13.150526133576614,
+              0.7551549400607336,
+              0.13137406267264806
+            ]
+          },
+          {
+            "time": 333.04,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              8.266009511140266,
+              -0.9115169329259611,
+              0.13240395464803884
+            ]
+          },
+          {
+            "time": 335.96,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              8.440965631020322,
+              -0.9049861043644551,
+              0.10885170225264545
+            ]
+          },
+          {
+            "time": 340.86,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.139827263006797,
+              -0.4990049191185932,
+              0.13277640998693854
+            ]
+          },
+          {
+            "time": 341.3,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              9.038865046896657,
+              -0.43706121360122946,
+              0.11211266811080899
+            ]
+          },
+          {
+            "time": 341.4,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.34162309045426,
+              -0.5262240977485494,
+              0.11407953855330193
+            ]
+          },
+          {
+            "time": 341.64,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              9.652206611144944,
+              -0.5463728381942464,
+              0.13999865591041713
+            ]
+          },
+          {
+            "time": 341.7,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.609779579055392,
+              -0.5289337810162064,
+              0.17128892019230277
+            ]
+          },
+          {
+            "time": 341.76,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              9.607911891133377,
+              -0.5366385520866471,
+              0.16354555246267496
+            ]
+          },
+          {
+            "time": 341.8,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              9.606068282968172,
+              -0.5332466980714101,
+              0.1491712342178609
+            ]
+          },
+          {
+            "time": 342.02,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.634567390507236,
+              -0.548637019181267,
+              0.15504472602912694
+            ]
+          },
+          {
+            "time": 342.06,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              9.662724245908516,
+              -0.5537514961496149,
+              0.1678719770227981
+            ]
+          },
+          {
+            "time": 342.22,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.794694804632524,
+              -0.5326269224884629,
+              0.10992587941504843
+            ]
+          },
+          {
+            "time": 342.32,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              9.825479188677251,
+              -0.4523218740479705,
+              0.10912177910228638
+            ]
+          },
+          {
+            "time": 342.38,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              9.8586640042509,
+              -0.4919002751573052,
+              0.1111334147114215
+            ]
+          },
+          {
+            "time": 342.42,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              9.884075744437729,
+              -0.5381953069091715,
+              0.11181614492721029
+            ]
+          },
+          {
+            "time": 342.52,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              9.933950149639436,
+              -0.6274050662939946,
+              0.1271400554800134
+            ]
+          },
+          {
+            "time": 342.68,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              9.964649860788276,
+              -0.7292455099233864,
+              0.11872404735056923
+            ]
+          },
+          {
+            "time": 346.68,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              9.821217101382766,
+              -1.3433174812005435,
+              0.12594866925005224
+            ]
+          },
+          {
+            "time": 346.98,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              10.477067572135567,
+              -1.5371948695208,
+              0.11085472824309339
+            ]
+          },
+          {
+            "time": 352.42,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              11.141227822235019,
+              -3.000763764586315,
+              0.155104709879949
+            ]
+          },
+          {
+            "time": 352.62,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              12.021032123494964,
+              -2.9812533050881878,
+              0.13957614789888678
+            ]
+          },
+          {
+            "time": 371.26,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              16.23360218465044,
+              -8.771839031835505,
+              0.14298539404305122
+            ]
+          },
+          {
+            "time": 430.46,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              8.732948080515763,
+              -1.0533619868913158,
+              0.10972060218547892
+            ]
+          },
+          {
+            "time": 436.4,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.8613898706172485,
+              -0.08335689289255431,
+              0.1377303335650555
+            ]
+          },
+          {
+            "time": 436.64,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              8.236647595351913,
+              -0.13874486484654272,
+              0.13188554544928197
+            ]
+          },
+          {
+            "time": 436.96,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              8.109828607796782,
+              0.03632349557242544,
+              0.10980522760188725
+            ]
+          },
+          {
+            "time": 437.02,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              8.176590413487563,
+              0.13873659634172664,
+              0.12568194938525248
+            ]
+          },
+          {
+            "time": 444.98,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.739770534790978,
+              2.3128567783443126,
+              0.14578743382717124
+            ]
+          },
+          {
+            "time": 445.28,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              8.39538960881113,
+              2.1711290421650244,
+              0.11501286281931587
+            ]
+          },
+          {
+            "time": 446.1,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              7.8313855529853145,
+              3.278974782689076,
+              0.12671968448140428
+            ]
+          },
+          {
+            "time": 450.16,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              8.114329212423497,
+              3.1736143150396345,
+              0.1255499804348289
+            ]
+          },
+          {
+            "time": 455.66,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              6.756886624688725,
+              3.7257088244263494,
+              0.10868888114954191
+            ]
+          },
+          {
+            "time": 456.06,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              7.211941369230814,
+              3.479375494615289,
+              0.1349115262444429
+            ]
+          },
+          {
+            "time": 462.76,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.158667809082233,
+              1.468682149073869,
+              0.11877197925267158
+            ]
+          },
+          {
+            "time": 463.0,
+            "side": 1,
+            "number": 1,
+            "ball": [
+              7.606877163228694,
+              1.737199062367761,
+              0.1412411205153471
+            ]
+          },
+          {
+            "time": 463.44,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              7.621842907224972,
+              1.1841280621445844,
+              0.12761018350062858
+            ]
+          },
+          {
+            "time": 466.86,
+            "side": 1,
+            "number": 4,
+            "ball": [
+              8.818547365706385,
+              0.758333635295615,
+              0.25960814920074526
+            ]
+          },
+          {
+            "time": 466.92,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              8.862211490256321,
+              0.6797644684632862,
+              0.2420300033334646
+            ]
+          },
+          {
+            "time": 472.72,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              8.695356502576395,
+              -1.0205086121719362,
+              0.1339411103494257
+            ]
+          },
+          {
+            "time": 473.82,
+            "side": 1,
+            "number": 5,
+            "ball": [
+              10.058199535857188,
+              -0.8787807213120592,
+              0.11063293620956967
+            ]
+          },
+          {
+            "time": 480.84,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              10.608765013002245,
+              -3.2062201407062703,
+              0.1397034725225115
+            ]
+          }
+        ],
+        "modes": [
+          "BeforeKickOff",
+          "GameOver",
+          "Goal_Left",
+          "KickOff_Left",
+          "KickOff_Right",
+          "PlayOn",
+          "free_kick_right"
+        ],
+        "recovery_peak_height": 0.0,
+        "completed_two_halves": true,
+        "half_seconds": 300,
+        "official_half_length": true,
+        "samples": 3001,
+        "opponent": "retricato",
+        "our_side": 0,
+        "requested_our_side": 0,
+        "seed": 61,
+        "initial_sim_time": 150.99999999993517,
+        "field_dimensions": [
+          55,
+          36,
+          40
+        ],
+        "goal_dimensions": [
+          1,
+          3.66,
+          1.83
+        ],
+        "rules": {
+          "max_team_size": 7,
+          "max_player_no": 99,
+          "half_time": 300,
+          "extra_half_time": 180,
+          "penalty_shooting_time": 60,
+          "kick_off_time": 15,
+          "throw_in_time": 15,
+          "corner_kick_time": 15,
+          "goal_kick_time": 15,
+          "free_kick_time": 15,
+          "direct_free_kick_time": 15,
+          "goal_pause_time": 3,
+          "throw_in_wait_time": 1,
+          "ground_max_time": 15,
+          "goalie_ground_max_time": 30,
+          "not_standing_max_time": 30,
+          "goalie_not_standing_max_time": 60,
+          "default_field_version": "fifa7vs7"
+        },
+        "public_configuration": "upstream default",
+        "source_manifest": "source_manifest.json",
+        "opening_legal": true,
+        "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc",
+        "public_healthy": true,
+        "our_goals": 6,
+        "opponent_goals": 0,
+        "won": true,
+        "messages_received": 30378,
+        "recoveries": 0,
+        "goals": 6,
+        "validated": true
+      },
+      "clients": [
+        {
+          "team": "StudyBlue",
+          "number": 1,
+          "role": "goalkeeper",
+          "frames": 30377,
+          "joint_commands": 698671,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.636,
+          "distance_walked": 108.87878168868505,
+          "ball_observations": 14363,
+          "start_position": [
+            -24.998,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            -18.314,
+            -0.008,
+            0.655
+          ],
+          "states": {
+            "READY": 1283,
+            "GOALKEEPER": 23293,
+            "DEFEND": 5800,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 724,
+          "messages_received": 4340,
+          "elapsed_seconds": 931.875
+        },
+        {
+          "team": "StudyBlue",
+          "number": 2,
+          "role": "left_defender",
+          "frames": 30376,
+          "joint_commands": 698648,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.636,
+          "distance_walked": 122.8786125746138,
+          "ball_observations": 15188,
+          "start_position": [
+            -16.997,
+            8.0,
+            0.665
+          ],
+          "end_position": [
+            -13.501,
+            8.008,
+            0.655
+          ],
+          "states": {
+            "READY": 1282,
+            "DEFEND": 29093,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 723,
+          "messages_received": 4340,
+          "elapsed_seconds": 931.875
+        },
+        {
+          "team": "StudyBlue",
+          "number": 3,
+          "role": "right_defender",
+          "frames": 30375,
+          "joint_commands": 698625,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.636,
+          "distance_walked": 122.68534109588288,
+          "ball_observations": 15188,
+          "start_position": [
+            -16.998,
+            -8.0,
+            0.665
+          ],
+          "end_position": [
+            -13.492,
+            -8.03,
+            0.655
+          ],
+          "states": {
+            "READY": 1281,
+            "DEFEND": 29093,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 723,
+          "messages_received": 4340,
+          "elapsed_seconds": 931.828
+        },
+        {
+          "team": "StudyBlue",
+          "number": 4,
+          "role": "left_midfielder",
+          "frames": 30375,
+          "joint_commands": 698625,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.635,
+          "distance_walked": 122.92160641654614,
+          "ball_observations": 15187,
+          "start_position": [
+            -10.998,
+            6.0,
+            0.665
+          ],
+          "end_position": [
+            -7.484,
+            6.002,
+            0.656
+          ],
+          "states": {
+            "READY": 1281,
+            "SUPPORT": 29093,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 723,
+          "messages_received": 4340,
+          "elapsed_seconds": 931.843
+        },
+        {
+          "team": "StudyBlue",
+          "number": 5,
+          "role": "right_midfielder",
+          "frames": 30375,
+          "joint_commands": 698625,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.635,
+          "distance_walked": 122.65623271717706,
+          "ball_observations": 15188,
+          "start_position": [
+            -10.998,
+            -6.0,
+            0.665
+          ],
+          "end_position": [
+            -7.489,
+            -6.026,
+            0.655
+          ],
+          "states": {
+            "READY": 1281,
+            "SUPPORT": 29093,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 723,
+          "messages_received": 4340,
+          "elapsed_seconds": 931.812
+        },
+        {
+          "team": "StudyBlue",
+          "number": 6,
+          "role": "left_forward",
+          "frames": 30375,
+          "joint_commands": 698625,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.57,
+          "distance_walked": 166.6951737638756,
+          "ball_observations": 15053,
+          "start_position": [
+            -6.498,
+            5.5,
+            0.665
+          ],
+          "end_position": [
+            -2.986,
+            5.477,
+            0.656
+          ],
+          "states": {
+            "READY": 1281,
+            "SUPPORT": 24861,
+            "ALIGN_DRIBBLE": 3422,
+            "DRIBBLE": 722,
+            "KICK": 80,
+            "ALIGN_PASS": 8,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 5,
+          "messages_sent": 724,
+          "messages_received": 4339,
+          "elapsed_seconds": 931.796
+        },
+        {
+          "team": "StudyBlue",
+          "number": 7,
+          "role": "right_forward",
+          "frames": 30375,
+          "joint_commands": 698625,
+          "beams": 7,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "left",
+          "min_height": 0.605,
+          "distance_walked": 301.9904217461368,
+          "ball_observations": 13997,
+          "start_position": [
+            -0.751,
+            0.0,
+            0.666
+          ],
+          "end_position": [
+            -6.075,
+            -0.077,
+            0.655
+          ],
+          "states": {
+            "READY": 1281,
+            "DRIBBLE": 3436,
+            "ALIGN_DRIBBLE": 9756,
+            "RESTART_CLEARANCE": 4852,
+            "SUPPORT": 5054,
+            "RECEIVE_PASS": 61,
+            "KICK": 592,
+            "SHOOT": 1446,
+            "ALIGN_SHOOT": 3896,
+            "GAME_OVER": 1
+          },
+          "score": [
+            6,
+            0
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 37,
+          "messages_sent": 724,
+          "messages_received": 4339,
+          "elapsed_seconds": 931.781
+        },
+        {
+          "team": "StudyOrange",
+          "number": 1,
+          "public_opponent": "retricato",
+          "frames": 30052,
+          "motor_frames": 30051,
+          "actions": 30053,
+          "distance_walked": 214.63877670510266,
+          "fallen_frames": 5829,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            27.506,
+            -0.003,
+            0.641
+          ],
+          "end_position": [
+            11.232,
+            3.933,
+            0.64
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 2,
+          "public_opponent": "retricato",
+          "frames": 30053,
+          "motor_frames": 30052,
+          "actions": 30054,
+          "distance_walked": 196.8246214400033,
+          "fallen_frames": 3073,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.006,
+            11.996,
+            0.641
+          ],
+          "end_position": [
+            17.484,
+            2.089,
+            0.649
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 3,
+          "public_opponent": "retricato",
+          "frames": 30052,
+          "motor_frames": 30051,
+          "actions": 30053,
+          "distance_walked": 193.22152627299792,
+          "fallen_frames": 3036,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.006,
+            3.996,
+            0.641
+          ],
+          "end_position": [
+            18.591,
+            0.67,
+            0.648
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 4,
+          "public_opponent": "retricato",
+          "frames": 30053,
+          "motor_frames": 30052,
+          "actions": 30054,
+          "distance_walked": 190.03567756134225,
+          "fallen_frames": 2873,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.005,
+            -4.003,
+            0.641
+          ],
+          "end_position": [
+            17.196,
+            1.802,
+            0.648
+          ],
+          "states": {
+            "BeforeKickOff": 54,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 5,
+          "public_opponent": "retricato",
+          "frames": 30053,
+          "motor_frames": 30052,
+          "actions": 30054,
+          "distance_walked": 190.24987577964092,
+          "fallen_frames": 3051,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            22.005,
+            -12.003,
+            0.641
+          ],
+          "end_position": [
+            24.928,
+            -1.535,
+            0.64
+          ],
+          "states": {
+            "BeforeKickOff": 54,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 6,
+          "public_opponent": "retricato",
+          "frames": 30052,
+          "motor_frames": 30051,
+          "actions": 30053,
+          "distance_walked": 187.35492176759044,
+          "fallen_frames": 794,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            15.006,
+            -0.003,
+            0.641
+          ],
+          "end_position": [
+            25.479,
+            -2.414,
+            0.636
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 7,
+          "public_opponent": "retricato",
+          "frames": 30052,
+          "motor_frames": 30051,
+          "actions": 30053,
+          "distance_walked": 205.00166104121024,
+          "fallen_frames": 5368,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            4.005,
+            15.996,
+            0.642
+          ],
+          "end_position": [
+            19.112,
+            0.765,
+            0.648
+          ],
+          "states": {
+            "BeforeKickOff": 53,
+            "KickOff_Left": 50,
+            "PlayOn": 23243,
+            "free_kick_right": 751,
+            "Goal_Left": 906,
+            "KickOff_Right": 5049
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        }
+      ],
+      "evidence_sha256": {
+        "report.json": "076296efe1e576f69d3513d8dc174643d3b0f911f90669a77be6ddfc5bda737c",
+        "telemetry.json": "6112234f542ac8468e956b13ae3b71c36eee323f7d509e005a5be9d3378d64ba",
+        "source_manifest.json": "04c9f0adbcbc4755621e651dc2b4c036625016b89b55be326a2fb7242a4d5a8b"
+      }
+    },
+    {
+      "directory": "E:\\3d\u4eff\u771f\\output\\evaluations\\match-z71l8qa3",
+      "report": {
+        "scenario": "match",
+        "sim_seconds": 600.0,
+        "score": [
+          0,
+          3
+        ],
+        "max_ball_x": 0.0,
+        "contacts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "max_attack_progress": 28.36119617779284,
+        "mirror": false,
+        "max_ball_speed": 5.344140193982271,
+        "contact_history": [
+          {
+            "time": 23.04,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -0.1353459299980238,
+              -0.018501080496318725,
+              0.1845935149347127
+            ]
+          },
+          {
+            "time": 30.9,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -6.362513175662603,
+              -0.9481764619167957,
+              0.13051113883692694
+            ]
+          },
+          {
+            "time": 31.26,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -6.06053902248401,
+              -1.100598243569891,
+              0.11374311230942105
+            ]
+          },
+          {
+            "time": 37.56,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -6.320536059312706,
+              -2.3357108423909274,
+              0.13454416015885823
+            ]
+          },
+          {
+            "time": 37.7,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -6.286602716929578,
+              -2.3020255523974105,
+              0.12869381817089603
+            ]
+          },
+          {
+            "time": 44.98,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -9.1076130991544,
+              0.32863370838430733,
+              0.15860796810741495
+            ]
+          },
+          {
+            "time": 50.92,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -12.250694192092471,
+              1.903626503634693,
+              0.1226598123054685
+            ]
+          },
+          {
+            "time": 119.6,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -5.438421053495368,
+              0.3551528533590286,
+              0.1264542576605725
+            ]
+          },
+          {
+            "time": 119.86,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -5.186138346421371,
+              0.2772871751324592,
+              0.13981327970572124
+            ]
+          },
+          {
+            "time": 120.12,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -5.207332610612573,
+              0.1140865847360652,
+              0.11486640019929284
+            ]
+          },
+          {
+            "time": 126.94,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -4.782299715140463,
+              -0.4146302167686582,
+              0.11332413055516363
+            ]
+          },
+          {
+            "time": 126.96,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -4.771465279004497,
+              -0.4195070110885763,
+              0.11184796433832453
+            ]
+          },
+          {
+            "time": 127.16,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -4.669726546573428,
+              -0.4317116194042235,
+              0.12054250550655239
+            ]
+          },
+          {
+            "time": 134.52,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -4.011308584991196,
+              0.5606998872006073,
+              0.10223354641011721
+            ]
+          },
+          {
+            "time": 134.84,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -3.8788560652950426,
+              0.3745668336484152,
+              0.13184997138190668
+            ]
+          },
+          {
+            "time": 142.74,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -5.657109213261863,
+              -1.1457356594352195,
+              0.13093706271838484
+            ]
+          },
+          {
+            "time": 151.78,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -3.464010583981858,
+              1.3077770518873963,
+              0.14729899020225032
+            ]
+          },
+          {
+            "time": 152.14,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -4.064911067433623,
+              1.1977062691715548,
+              0.11550011409185702
+            ]
+          },
+          {
+            "time": 152.38,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -3.99947435348387,
+              1.0126248470597974,
+              0.11603470697883095
+            ]
+          },
+          {
+            "time": 156.84,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -3.624512802280562,
+              0.5001238101119154,
+              0.10931001150650572
+            ]
+          },
+          {
+            "time": 157.08,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -3.6406980599528977,
+              0.4918080771620076,
+              0.11235443625829572
+            ]
+          },
+          {
+            "time": 157.1,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -3.6391967061558375,
+              0.4916045826054526,
+              0.11111896898295716
+            ]
+          },
+          {
+            "time": 157.16,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -3.636525174437816,
+              0.4912401801213946,
+              0.11135759255731559
+            ]
+          },
+          {
+            "time": 157.38,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -3.561825341097246,
+              0.36144323673335,
+              0.10962171081292407
+            ]
+          },
+          {
+            "time": 163.92,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -2.8787283578182867,
+              -0.9571528131449829,
+              0.11460476355809718
+            ]
+          },
+          {
+            "time": 164.26,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -2.468809069575607,
+              -1.0983867046362819,
+              0.11170869825789544
+            ]
+          },
+          {
+            "time": 170.28,
+            "side": 0,
+            "number": 5,
+            "ball": [
+              -1.77422426798436,
+              -1.9295028019131022,
+              0.15190886162302994
+            ]
+          },
+          {
+            "time": 170.44,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -1.7363935335365497,
+              -1.7937883480911563,
+              0.09705441850191243
+            ]
+          },
+          {
+            "time": 172.62,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -2.936518418723024,
+              0.12143728654860725,
+              0.11332692113610497
+            ]
+          },
+          {
+            "time": 191.04,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -6.158449567488689,
+              5.094714627553853,
+              0.12870117150663296
+            ]
+          },
+          {
+            "time": 259.36,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -23.46369668862826,
+              3.6388144735780066,
+              0.1270745069486285
+            ]
+          },
+          {
+            "time": 276.38,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.934179746846212,
+              4.030558011380989,
+              0.13580184237814938
+            ]
+          },
+          {
+            "time": 276.44,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -19.9170314139247,
+              4.038803934224893,
+              0.14613663990340534
+            ]
+          },
+          {
+            "time": 276.46,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.921313940962683,
+              4.026120080339016,
+              0.14573137146744944
+            ]
+          },
+          {
+            "time": 276.64,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -19.942531262868428,
+              3.932037293921523,
+              0.12045302890113141
+            ]
+          },
+          {
+            "time": 284.66,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.067810376483717,
+              3.322166101417726,
+              0.1161568469402201
+            ]
+          },
+          {
+            "time": 284.82,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -19.138969558923137,
+              3.2480655344960137,
+              0.1102476652547432
+            ]
+          },
+          {
+            "time": 285.1,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.116738895850244,
+              3.3130703352383977,
+              0.10932537758622048
+            ]
+          },
+          {
+            "time": 287.38,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -18.999023613856966,
+              3.331832821511241,
+              0.11325052721493503
+            ]
+          },
+          {
+            "time": 290.66,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -18.77648132337014,
+              3.348655308262401,
+              0.10831468122097476
+            ]
+          },
+          {
+            "time": 290.92,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -19.252304525311317,
+              3.276692331606572,
+              0.10916724477651651
+            ]
+          },
+          {
+            "time": 291.04,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.17950059690946,
+              3.304443323843984,
+              0.1297724277305968
+            ]
+          },
+          {
+            "time": 291.16,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -19.22295115822748,
+              3.3008040626480675,
+              0.11469460014816918
+            ]
+          },
+          {
+            "time": 291.34,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.224388343105336,
+              3.2499857363233073,
+              0.11230375898946336
+            ]
+          },
+          {
+            "time": 291.48,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -19.32283702724509,
+              3.154391813919415,
+              0.1118765798027029
+            ]
+          },
+          {
+            "time": 291.5,
+            "side": 1,
+            "number": 6,
+            "ball": [
+              -19.343755310758855,
+              3.1327683969609463,
+              0.11140639936304844
+            ]
+          },
+          {
+            "time": 317.48,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -0.07910174244148085,
+              -0.010820315340501298,
+              0.14869009917056192
+            ]
+          },
+          {
+            "time": 336.94,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -11.278450931725896,
+              -0.3086273231710885,
+              0.1335537333939326
+            ]
+          },
+          {
+            "time": 337.38,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -11.351362955762063,
+              -0.3790183287609259,
+              0.12280933872400215
+            ]
+          },
+          {
+            "time": 337.44,
+            "side": 0,
+            "number": 6,
+            "ball": [
+              -11.326906322993038,
+              -0.4413032505277636,
+              0.10729825740562621
+            ]
+          },
+          {
+            "time": 347.86,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -8.409883645785657,
+              -4.232513391157226,
+              0.10975516288472034
+            ]
+          },
+          {
+            "time": 348.28,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -8.073631284902799,
+              -4.119091580942993,
+              0.11758385642656878
+            ]
+          },
+          {
+            "time": 351.86,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -8.717757477803184,
+              -3.385512931457675,
+              0.10555296206667336
+            ]
+          },
+          {
+            "time": 352.14,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -8.528379057987278,
+              -3.4886625687619053,
+              0.122296702965406
+            ]
+          },
+          {
+            "time": 352.2,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -8.566907227247835,
+              -3.435116580329336,
+              0.12363106180908484
+            ]
+          },
+          {
+            "time": 352.22,
+            "side": 0,
+            "number": 1,
+            "ball": [
+              -8.554254087851053,
+              -3.405456134479027,
+              0.10528262183348311
+            ]
+          },
+          {
+            "time": 352.24,
+            "side": 1,
+            "number": 2,
+            "ball": [
+              -8.54312266544333,
+              -3.3774663798467195,
+              0.10037403685561323
+            ]
+          },
+          {
+            "time": 360.86,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.829220587543492,
+              0.43735116634801935,
+              0.10849003094507076
+            ]
+          },
+          {
+            "time": 424.76,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -12.807298647022483,
+              -0.6436235741624384,
+              0.1099301967743594
+            ]
+          },
+          {
+            "time": 428.06,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -13.256073144273138,
+              -0.2201065829940735,
+              0.14902351791766047
+            ]
+          },
+          {
+            "time": 428.34,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -13.661103872453266,
+              -0.30219894126143765,
+              0.1295987444495361
+            ]
+          },
+          {
+            "time": 436.56,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.43026818676255,
+              -1.408638284719531,
+              0.10974512810900032
+            ]
+          },
+          {
+            "time": 437.32,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -12.129596906340355,
+              -1.4648320049002141,
+              0.1107053099973863
+            ]
+          },
+          {
+            "time": 437.62,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.892401773150446,
+              -1.4350988054256022,
+              0.11254056177826105
+            ]
+          },
+          {
+            "time": 444.12,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -12.36959269951748,
+              -1.90606200279191,
+              0.08535588424700093
+            ]
+          },
+          {
+            "time": 444.42,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.923140335862573,
+              -2.0009751766959125,
+              0.1918672558197189
+            ]
+          },
+          {
+            "time": 450.62,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -13.078452740779825,
+              -2.8764570778887606,
+              0.11282726817743553
+            ]
+          },
+          {
+            "time": 450.82,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -12.869862171015303,
+              -2.7976812961348188,
+              0.11293815597041681
+            ]
+          },
+          {
+            "time": 451.18,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -13.108370134922776,
+              -2.774241030313305,
+              0.11775279609933037
+            ]
+          },
+          {
+            "time": 451.28,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -13.138739317374549,
+              -2.791522504479604,
+              0.12296855553512111
+            ]
+          },
+          {
+            "time": 451.32,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -13.141446739634004,
+              -2.804022141529592,
+              0.11984674841002275
+            ]
+          },
+          {
+            "time": 453.22,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -12.11233478414012,
+              -2.4723358118089034,
+              0.11079755095479389
+            ]
+          },
+          {
+            "time": 458.52,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -11.725172596922521,
+              -2.848614845945213,
+              0.11911633048398637
+            ]
+          },
+          {
+            "time": 458.56,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.73516139134783,
+              -2.823269875993012,
+              0.17583628781378088
+            ]
+          },
+          {
+            "time": 458.6,
+            "side": 0,
+            "number": 2,
+            "ball": [
+              -11.732611199615164,
+              -2.7916266145020106,
+              0.21543575548073163
+            ]
+          },
+          {
+            "time": 458.64,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -11.737007623184262,
+              -2.7580355128623655,
+              0.2314337423552844
+            ]
+          },
+          {
+            "time": 459.06,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -12.328671891782582,
+              -2.3732807318885545,
+              0.2038798391880158
+            ]
+          },
+          {
+            "time": 465.02,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -14.145879083992877,
+              -0.6784193624173837,
+              0.14661981050328937
+            ]
+          },
+          {
+            "time": 478.98,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -18.590649041341237,
+              -3.57360384430982,
+              0.1396824411742248
+            ]
+          },
+          {
+            "time": 479.6,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -18.424117678069777,
+              -3.7849020673162705,
+              0.1224303193625077
+            ]
+          },
+          {
+            "time": 480.08,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -18.96694988543028,
+              -4.0235490507036245,
+              0.1310139568690662
+            ]
+          },
+          {
+            "time": 484.48,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -19.254034699502498,
+              -4.76681688776503,
+              0.11993165800566535
+            ]
+          },
+          {
+            "time": 485.84,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -20.100299023073454,
+              -4.119773248426301,
+              0.10973981256845892
+            ]
+          },
+          {
+            "time": 486.22,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.100534230999727,
+              -3.891176911063722,
+              0.13322052472135468
+            ]
+          },
+          {
+            "time": 486.28,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -20.107131753795247,
+              -3.887374694208319,
+              0.13744414575134065
+            ]
+          },
+          {
+            "time": 486.34,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.10363163599538,
+              -3.873229170760603,
+              0.11397698387006659
+            ]
+          },
+          {
+            "time": 486.42,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -20.104668954542255,
+              -3.8407072538866363,
+              0.14402614785305515
+            ]
+          },
+          {
+            "time": 486.68,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.0743617700978,
+              -3.8139686655298766,
+              0.11431149713333962
+            ]
+          },
+          {
+            "time": 491.58,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -20.3103269524626,
+              -3.0358273610099507,
+              0.1386236164693379
+            ]
+          },
+          {
+            "time": 491.68,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.24716279502091,
+              -3.064499162991774,
+              0.13688819933725688
+            ]
+          },
+          {
+            "time": 491.7,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -20.253111247527663,
+              -3.0863579423021887,
+              0.11949600557015319
+            ]
+          },
+          {
+            "time": 491.74,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.269418480230417,
+              -3.1181030311775393,
+              0.10212240841046887
+            ]
+          },
+          {
+            "time": 491.9,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -20.31994965805586,
+              -3.2180031591475027,
+              0.11240038002833802
+            ]
+          },
+          {
+            "time": 497.76,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -20.892583462980554,
+              -4.528174390993097,
+              0.12033838633300509
+            ]
+          },
+          {
+            "time": 497.96,
+            "side": 0,
+            "number": 3,
+            "ball": [
+              -21.367333635255537,
+              -4.211932674312797,
+              0.1259809203900618
+            ]
+          },
+          {
+            "time": 508.18,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -19.271972518005388,
+              -1.267162572712198,
+              0.11182613333430128
+            ]
+          },
+          {
+            "time": 508.36,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -19.697948062887857,
+              -1.2802255851420117,
+              0.13446726676012125
+            ]
+          },
+          {
+            "time": 508.5,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -19.495511947645564,
+              -1.1565497973909753,
+              0.1303585256929701
+            ]
+          },
+          {
+            "time": 572.8,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -18.901330896856436,
+              -0.3078990846692328,
+              0.11289026191070982
+            ]
+          },
+          {
+            "time": 581.74,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -17.391651935086642,
+              0.3486958391241693,
+              0.11741681299328015
+            ]
+          },
+          {
+            "time": 581.8,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -17.338380212936322,
+              0.2894919124630034,
+              0.10705934622500508
+            ]
+          },
+          {
+            "time": 581.82,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -17.31545323370886,
+              0.2691660957339432,
+              0.10771235835428111
+            ]
+          },
+          {
+            "time": 587.26,
+            "side": 0,
+            "number": 4,
+            "ball": [
+              -15.27423349479098,
+              -1.6075670460414384,
+              0.10945775032729016
+            ]
+          },
+          {
+            "time": 591.06,
+            "side": 1,
+            "number": 7,
+            "ball": [
+              -15.310602365505709,
+              -1.6604158649626897,
+              0.13221951884189245
+            ]
+          },
+          {
+            "time": 591.32,
+            "side": 0,
+            "number": 7,
+            "ball": [
+              -16.329766552348474,
+              -1.6148397394350595,
+              0.160052360491496
+            ]
+          }
+        ],
+        "modes": [
+          "BeforeKickOff",
+          "GameOver",
+          "Goal_Right",
+          "KickOff_Left",
+          "KickOff_Right",
+          "PlayOn",
+          "goal_kick_left"
+        ],
+        "recovery_peak_height": 0.0,
+        "completed_two_halves": true,
+        "half_seconds": 300,
+        "official_half_length": true,
+        "samples": 3000,
+        "opponent": "retricato",
+        "our_side": 1,
+        "requested_our_side": 1,
+        "seed": 62,
+        "initial_sim_time": 524.1199999995958,
+        "field_dimensions": [
+          55,
+          36,
+          40
+        ],
+        "goal_dimensions": [
+          1,
+          3.66,
+          1.83
+        ],
+        "rules": {
+          "max_team_size": 7,
+          "max_player_no": 99,
+          "half_time": 300,
+          "extra_half_time": 180,
+          "penalty_shooting_time": 60,
+          "kick_off_time": 15,
+          "throw_in_time": 15,
+          "corner_kick_time": 15,
+          "goal_kick_time": 15,
+          "free_kick_time": 15,
+          "direct_free_kick_time": 15,
+          "goal_pause_time": 3,
+          "throw_in_wait_time": 1,
+          "ground_max_time": 15,
+          "goalie_ground_max_time": 30,
+          "not_standing_max_time": 30,
+          "goalie_not_standing_max_time": 60,
+          "default_field_version": "fifa7vs7"
+        },
+        "public_configuration": "upstream default",
+        "source_manifest": "source_manifest.json",
+        "opening_legal": true,
+        "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc",
+        "public_healthy": true,
+        "our_goals": 3,
+        "opponent_goals": 0,
+        "won": true,
+        "messages_received": 30060,
+        "recoveries": 1,
+        "goals": 3,
+        "validated": true
+      },
+      "clients": [
+        {
+          "team": "StudyBlue",
+          "number": 1,
+          "role": "goalkeeper",
+          "frames": 30054,
+          "joint_commands": 691242,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 96.23362978438519,
+          "ball_observations": 14215,
+          "start_position": [
+            24.997,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            25.544,
+            0.867,
+            0.656
+          ],
+          "states": {
+            "READY": 507,
+            "DEFEND": 3754,
+            "GOALKEEPER": 25792,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 895.062
+        },
+        {
+          "team": "StudyBlue",
+          "number": 2,
+          "role": "left_defender",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.628,
+          "distance_walked": 194.8273309671192,
+          "ball_observations": 14634,
+          "start_position": [
+            16.998,
+            8.0,
+            0.665
+          ],
+          "end_position": [
+            3.516,
+            -6.221,
+            0.657
+          ],
+          "states": {
+            "READY": 506,
+            "DEFEND": 26756,
+            "ALIGN_DRIBBLE": 2096,
+            "DRIBBLE": 646,
+            "KICK": 48,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 3,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 895.062
+        },
+        {
+          "team": "StudyBlue",
+          "number": 3,
+          "role": "right_defender",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.636,
+          "distance_walked": 169.41920267534263,
+          "ball_observations": 15027,
+          "start_position": [
+            16.998,
+            -8.0,
+            0.665
+          ],
+          "end_position": [
+            3.489,
+            9.829,
+            0.655
+          ],
+          "states": {
+            "READY": 506,
+            "DEFEND": 29546,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 715,
+          "messages_received": 4295,
+          "elapsed_seconds": 895.0
+        },
+        {
+          "team": "StudyBlue",
+          "number": 4,
+          "role": "left_midfielder",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.633,
+          "distance_walked": 168.04148292954915,
+          "ball_observations": 15026,
+          "start_position": [
+            10.998,
+            6.0,
+            0.665
+          ],
+          "end_position": [
+            -2.483,
+            -4.22,
+            0.657
+          ],
+          "states": {
+            "READY": 506,
+            "SUPPORT": 29546,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 715,
+          "messages_received": 4295,
+          "elapsed_seconds": 894.984
+        },
+        {
+          "team": "StudyBlue",
+          "number": 5,
+          "role": "right_midfielder",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.605,
+          "distance_walked": 159.14821148646894,
+          "ball_observations": 15027,
+          "start_position": [
+            10.998,
+            -6.0,
+            0.665
+          ],
+          "end_position": [
+            -2.512,
+            7.837,
+            0.656
+          ],
+          "states": {
+            "READY": 506,
+            "SUPPORT": 29546,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 0,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 894.984
+        },
+        {
+          "team": "StudyBlue",
+          "number": 6,
+          "role": "left_forward",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 0,
+          "error": null,
+          "side": "right",
+          "min_height": 0.621,
+          "distance_walked": 189.93956601950174,
+          "ball_observations": 14498,
+          "start_position": [
+            6.498,
+            5.5,
+            0.665
+          ],
+          "end_position": [
+            -6.99,
+            -3.725,
+            0.657
+          ],
+          "states": {
+            "READY": 506,
+            "SUPPORT": 24601,
+            "RESTART_CLEARANCE": 1989,
+            "ALIGN_SHOOT": 2508,
+            "SHOOT": 432,
+            "KICK": 16,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 0,
+          "recovery_attempts": 0,
+          "kicks": 1,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 894.953
+        },
+        {
+          "team": "StudyBlue",
+          "number": 7,
+          "role": "right_forward",
+          "frames": 30053,
+          "joint_commands": 691219,
+          "beams": 4,
+          "fallen_frames": 35,
+          "error": null,
+          "side": "right",
+          "min_height": 0.106,
+          "distance_walked": 317.1541057151702,
+          "ball_observations": 14488,
+          "start_position": [
+            6.498,
+            0.0,
+            0.665
+          ],
+          "end_position": [
+            -16.954,
+            1.112,
+            0.656
+          ],
+          "states": {
+            "READY": 506,
+            "SUPPORT": 6611,
+            "RESTART_CLEARANCE": 2871,
+            "ALIGN_DRIBBLE": 9970,
+            "DRIBBLE": 3751,
+            "KICK": 544,
+            "ALIGN_SHOOT": 4393,
+            "SHOOT": 1347,
+            "GET_UP": 59,
+            "GAME_OVER": 1
+          },
+          "score": [
+            0,
+            3
+          ],
+          "recoveries": 1,
+          "recovery_attempts": 1,
+          "kicks": 34,
+          "messages_sent": 716,
+          "messages_received": 4294,
+          "elapsed_seconds": 894.953
+        },
+        {
+          "team": "StudyOrange",
+          "number": 1,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 205.06968097803323,
+          "fallen_frames": 6086,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -27.506,
+            0.003,
+            0.641
+          ],
+          "end_position": [
+            -13.931,
+            2.278,
+            0.636
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 2,
+          "public_opponent": "retricato",
+          "frames": 30106,
+          "motor_frames": 30105,
+          "actions": 30107,
+          "distance_walked": 209.67275319189804,
+          "fallen_frames": 4041,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -22.006,
+            12.003,
+            0.641
+          ],
+          "end_position": [
+            -18.092,
+            0.966,
+            0.636
+          ],
+          "states": {
+            "BeforeKickOff": 106,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 3,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 199.05736431883562,
+          "fallen_frames": 2393,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -22.006,
+            4.003,
+            0.641
+          ],
+          "end_position": [
+            -15.833,
+            0.895,
+            0.635
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 4,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 194.42803323632177,
+          "fallen_frames": 691,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -22.006,
+            -3.996,
+            0.641
+          ],
+          "end_position": [
+            -15.139,
+            -0.766,
+            0.023
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 5,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 206.50950342520076,
+          "fallen_frames": 4106,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -22.006,
+            -11.996,
+            0.641
+          ],
+          "end_position": [
+            -17.032,
+            -1.162,
+            0.018
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 6,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 214.58993412658285,
+          "fallen_frames": 5794,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -15.006,
+            0.003,
+            0.641
+          ],
+          "end_position": [
+            -15.477,
+            -1.099,
+            0.165
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        },
+        {
+          "team": "StudyOrange",
+          "number": 7,
+          "public_opponent": "retricato",
+          "frames": 30105,
+          "motor_frames": 30104,
+          "actions": 30106,
+          "distance_walked": 199.3212401272721,
+          "fallen_frames": 3413,
+          "parse_errors": 0,
+          "error": null,
+          "start_position": [
+            -4.005,
+            16.003,
+            0.642
+          ],
+          "end_position": [
+            -16.717,
+            -2.252,
+            0.192
+          ],
+          "states": {
+            "BeforeKickOff": 105,
+            "KickOff_Left": 3003,
+            "PlayOn": 25041,
+            "Goal_Right": 453,
+            "goal_kick_left": 751,
+            "KickOff_Right": 751,
+            "GameOver": 1
+          },
+          "messages_received": 0,
+          "public_commit": "a11805749206b72ab9140ec08b158c1cd4e259cc"
+        }
+      ],
+      "evidence_sha256": {
+        "report.json": "6411de666bf367e427c679a554870584a09f0eda27bcd5eaa3bc066eee554efa",
+        "telemetry.json": "e703a6ce3a7925ba6c9077c55dba0f1c9988d8b17c7622bfa2365ade168b5831",
+        "source_manifest.json": "04c9f0adbcbc4755621e651dc2b4c036625016b89b55be326a2fb7242a4d5a8b"
+      }
+    }
+  ],
+  "source_verification": {
+    "apollo": {
+      "repository": "https://github.com/XiangruiJiang/ApolloCodebase",
+      "commit": "71018c968969d6e55130b0e1987cd5b4f5c3b4df",
+      "verified_files": 70,
+      "windows_changed_files": [
+        "src/server/tcp_lpm_client.cc",
+        "src/server/tcp_lpm_client.h"
+      ],
+      "windows_binary_sha256": "69a9dac00931cd93e29733f791cd4ef2f0e5148e770d1c4c7166590ebc3d5abf",
+      "onnxruntime_dll_sha256": "579b636403983254346a5c1d80bd28f1519cd1e284cd204f8d4ff41f8d711559"
+    },
+    "bahia": {
+      "repository": "https://gitlab.com/bahiart/BahiaRT-MujOCo-base",
+      "commit": "a77702a97d22b7b66966dd0de2c369fd4d10dbed",
+      "verified_files": 31
+    },
+    "my3d": {
+      "repository": "https://github.com/o-1717986918/My3DProject",
+      "commit": "e3e0a255f983d009ac90eb8abe6cade8b3fbcb12",
+      "verified_files": 126,
+      "windows_changed_files": [
+        "src/server/tcp_lpm_client.cc",
+        "src/server/tcp_lpm_client.h"
+      ],
+      "windows_binary_sha256": "125726b84d6952f684ba297f2c3e1294efce1ee8365abcc24e39fca28fb9d216",
+      "onnxruntime_dll_sha256": "579b636403983254346a5c1d80bd28f1519cd1e284cd204f8d4ff41f8d711559"
+    },
+    "aspen": {
+      "repository": "https://github.com/Aspen071213/Aspen",
+      "commit": "ade8367d8abe06974a53373e4c7260ace639658f",
+      "verified_files": 34
+    },
+    "retricato": {
+      "repository": "https://github.com/Retricato/RCSS-Booster-Client",
+      "commit": "a11805749206b72ab9140ec08b158c1cd4e259cc",
+      "verified_files": 12
+    }
+  }
+}

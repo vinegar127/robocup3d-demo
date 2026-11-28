@@ -1,0 +1,3 @@
+# Optional CPU GRU opponent; install using the official PyTorch CPU index.
+# Install requirements-opponents.txt separately first.
+torch==2.15.0+cpu

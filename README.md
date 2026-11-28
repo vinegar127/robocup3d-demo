@@ -28,6 +28,16 @@ python code/demo_sim.py --bench 20 --cycles 600
 
 也可以用 Chrome / Edge 打开 `tools/walkviz/index.html`，通过滑块观察简化步态。该页面是独立演示，页面参数不会自动写回 Python Demo。
 
+本地集成的 YK521-LY 修改、坐标修正及对照测试结果见
+[应用记录](INTEGRATION_YK521-LY.md)。后续站位、触球时序与射门方向的修正见
+[踢球一致性修正记录](KICK_CONSISTENCY_20261117.md)。
+
+## 正式 T1 比赛候选
+
+本分支的 [competition/](competition/README.md) 保存独立的 MuJoCo / RCSSServerMJ
+球队与 `demo-team-press` 候选，包括多人接应、较快原地转向、测试和实测摘要。
+该子项目需要另装依赖，采用 GPL-3.0-or-later；顶层零依赖教学 Demo 继续使用 MIT 许可。
+
 ## 代码从哪里读
 
 | 文件 | 内容 |

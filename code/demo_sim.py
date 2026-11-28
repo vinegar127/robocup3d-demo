@@ -422,18 +422,18 @@ class MiniSim:
 
         # --- 踢球判定 ---
         d = math.hypot(self.ball.x - robot.x, self.ball.y - robot.y)
-        if d < 0.75 and not robot.fallen:
+        if (0.15 < d < 0.75 and not robot.fallen and self.ball.z <= 0.20
+                and self.state.play_mode == "PlayOn" and cmd.kick_power > 0):
             # 判断球是不是在身体正前方（真实比赛里踢球必须朝向球，否则踢空）
             bang = self._wrap(
                 math.degrees(math.atan2(self.ball.y - robot.y, self.ball.x - robot.x))
                 - robot.yaw
             )
-            if abs(bang) < 40.0 and ag.state.value == "kick":
+            if abs(bang) < 40.0:
                 # 踢！
-                power = ag.cfg.kick_power
-                # 方向：朝对方球门（+ 一点随机误差，模拟踢不准）
-                gx, gy = Field.opponent_goal(robot.side)
-                aim = math.atan2(gy - self.ball.y, gx - self.ball.x)
+                power = min(1.0, cmd.kick_power)
+                # 沿身体朝向踢出：瞄准由 agent 负责，世界不再自动修正方向。
+                aim = math.radians(robot.yaw)
                 aim += self.rng.gauss(0, 0.10)   # 射门精度
                 speed = 6.5 * power
                 self.ball.vx = speed * math.cos(aim)

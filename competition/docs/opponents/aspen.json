@@ -1,0 +1,177 @@
+{
+  "repository": "https://github.com/Aspen071213/Aspen",
+  "commit": "ade8367d8abe06974a53373e4c7260ace639658f",
+  "use": "Pinned unmodified local benchmark opponent; license retained if present, no relicensing assumed",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 117,
+      "sha256": "f679de11e0567c56df9ead9ed45fd56306ec4679d007313a80169462137ffd39"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3079,
+      "sha256": "3f2a54e96c98938c05b6de1c587431949ab829db3c9d719a6e946082f5ac32d5"
+    },
+    {
+      "path": "build_binary.sh",
+      "bytes": 1730,
+      "sha256": "3efeb9ab39e72b11a5fa48ae9272aec90458002c5535e86c9b2376411d625167"
+    },
+    {
+      "path": "kill.sh",
+      "bytes": 35,
+      "sha256": "02edb4e864afc9eda3155d19c6cfe71692a4705f1817cc3744578b83f7e8bfc4"
+    },
+    {
+      "path": "lazygit.tar.gz",
+      "bytes": 9,
+      "sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    },
+    {
+      "path": "mujococodebase/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mujococodebase/agent.py",
+      "bytes": 2638,
+      "sha256": "f2b1c66996723b3bc893653d6236cb1f4c4b5f4b2e922acbc24b392027dc0d60"
+    },
+    {
+      "path": "mujococodebase/decision_maker.py",
+      "bytes": 15352,
+      "sha256": "6a4032bcb687c30851723d0e763c8df961c1d5343a75d504e3c1e49d377dcbf0"
+    },
+    {
+      "path": "mujococodebase/robot.py",
+      "bytes": 7554,
+      "sha256": "7556d9ce8244c3d2f390ebff5200a91add99755650064393c303a0f49d99e29d"
+    },
+    {
+      "path": "mujococodebase/server.py",
+      "bytes": 3571,
+      "sha256": "81feaaf0872c7225dee2d5c127f75831db5bed235cbfbfaa9c0aaddf7d8c1f2b"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up.py",
+      "bytes": 2524,
+      "sha256": "cd257a23a460150cd91e201afed8359e7eaba80fb903ed1e70b756e570299647"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up_back.yaml",
+      "bytes": 1868,
+      "sha256": "368c4f294ab5d941cdbbc00be972849efa651cbf638cdf4db90a49f9a4dff583"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/get_up/get_up_front.yaml",
+      "bytes": 1918,
+      "sha256": "07bd0f0d90694da5bb14e52ddbad1579b3a03685f9b0bbcfe3ae4455e010bfd9"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/keyframe.py",
+      "bytes": 3228,
+      "sha256": "2ed915ba0d19a527735f03c1f0fae8f9600161b7f3209180b229399d34fa73fb"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/poses/neutral/neutral.py",
+      "bytes": 228,
+      "sha256": "20b978e40032fb294e70410964648d4429d02d24eeeb88df76787e461a8d14c6"
+    },
+    {
+      "path": "mujococodebase/skills/keyframe/poses/neutral/neutral.yaml",
+      "bytes": 384,
+      "sha256": "3e58524270bbcc3a5fd0646a9edcbf08190b984242626117cead7ac8b3e220a6"
+    },
+    {
+      "path": "mujococodebase/skills/skill.py",
+      "bytes": 1190,
+      "sha256": "a19cd452c265a34144a133a3a6d6882f74d03fbe6f680d8f8e9d1a2999ff7a42"
+    },
+    {
+      "path": "mujococodebase/skills/skills_manager.py",
+      "bytes": 2961,
+      "sha256": "d5002acbaa47333e32a6538c5c356fb0d6abaac48473e004d7132303daa37e8f"
+    },
+    {
+      "path": "mujococodebase/skills/walk/walk.onnx",
+      "bytes": 836122,
+      "sha256": "ece316886c2a4cde17402f0332f0f955a83db786490cf6d50cfc680e5e30434b"
+    },
+    {
+      "path": "mujococodebase/skills/walk/walk.py",
+      "bytes": 4482,
+      "sha256": "d0f1de6c94ae69214ba1e1dedb0820ea965c747449c3e455f946f3b190b44073"
+    },
+    {
+      "path": "mujococodebase/utils/math_ops.py",
+      "bytes": 16106,
+      "sha256": "a4427b34ffad2b49920ddce374a8f3f58a0e107fb9c517a880be0d910140aa47"
+    },
+    {
+      "path": "mujococodebase/utils/neural_network.py",
+      "bytes": 2016,
+      "sha256": "db13d77b8e04d8ceb9029ac34a02e96a4fc952e95af3f728a2dfb0da950e6771"
+    },
+    {
+      "path": "mujococodebase/world/field.py",
+      "bytes": 1361,
+      "sha256": "b4020bad2a1b44b9a6b153e77b9a94332af9a93216152e537b65439b7bae0741"
+    },
+    {
+      "path": "mujococodebase/world/field_landmarks.py",
+      "bytes": 1178,
+      "sha256": "740f39f793afd2ee668b9b3ba2cdd1aa7b0b6295128364bf7bc841d6ee4c6430"
+    },
+    {
+      "path": "mujococodebase/world/other_robot.py",
+      "bytes": 195,
+      "sha256": "4c3b0a8112496961a99dde1ba3a7317520d55a1ee1138ce31ae51d267ca2e6d6"
+    },
+    {
+      "path": "mujococodebase/world/play_mode.py",
+      "bytes": 7243,
+      "sha256": "368fe9eacbc156ccced1509971e1ee893a88c2d13db8465ad75b6b0d2b4cfae7"
+    },
+    {
+      "path": "mujococodebase/world/world.py",
+      "bytes": 3025,
+      "sha256": "c5dea21d6881d7687e04b22f6255d96ed6858344b923485633d66325f9be2a31"
+    },
+    {
+      "path": "mujococodebase/world_parser.py",
+      "bytes": 10296,
+      "sha256": "2992947099efc1d36d809b3f1b9cefaeb0a88743bf5ec0c115a80f90392f6dd7"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 686,
+      "sha256": "c0182d008eef9fbd96ce0303d8e4ba0b7b3fec5639abd3efb3641f5626ebfef8"
+    },
+    {
+      "path": "run_player.py",
+      "bytes": 985,
+      "sha256": "a7f7750fed4cd28d7f959c0229cd2797b80a62212d7502aa2c0db76893b60bbe"
+    },
+    {
+      "path": "start.sh",
+      "bytes": 178,
+      "sha256": "14fc3f3ef59c315dafe376f861d6a3c8cd1363ddd2eea2c3bed53dcc6bac788a"
+    },
+    {
+      "path": "start3v3.sh",
+      "bytes": 190,
+      "sha256": "23167db31fa0bffe0d09c1b36a6552f8c9bd0f7f51270ab35cb875c05f35547d"
+    },
+    {
+      "path": "start_7v7.sh",
+      "bytes": 194,
+      "sha256": "42fed5b82195b139862d3b193ae5469d201647d2fc12fa8d9d4f0be342e5b6c0"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 50730,
+      "sha256": "19656e8faea80d674912faf574ad982ec4c5ec251c989d2e0eb1da22c115d4b6"
+    }
+  ]
+}

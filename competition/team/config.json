@@ -1,0 +1,203 @@
+{
+  "model": "T1",
+  "field": "RCSSServerMJ 0.2.1 fifa7vs7, 55 x 36 metres",
+  "formation": {
+    "1": {
+      "role": "goalkeeper",
+      "beam": [
+        -25,
+        0,
+        0
+      ]
+    },
+    "2": {
+      "role": "left_defender",
+      "beam": [
+        -17,
+        8,
+        0
+      ]
+    },
+    "3": {
+      "role": "right_defender",
+      "beam": [
+        -17,
+        -8,
+        0
+      ]
+    },
+    "4": {
+      "role": "left_midfielder",
+      "beam": [
+        -11,
+        6,
+        0
+      ]
+    },
+    "5": {
+      "role": "right_midfielder",
+      "beam": [
+        -11,
+        -6,
+        0
+      ]
+    },
+    "6": {
+      "role": "left_forward",
+      "beam": [
+        -6.5,
+        5.5,
+        0
+      ]
+    },
+    "7": {
+      "role": "right_forward",
+      "beam": [
+        -0.75,
+        0,
+        0
+      ]
+    }
+  },
+  "joints": {
+    "q_hj1": [
+      "he1",
+      0,
+      150,
+      1
+    ],
+    "q_hj2": [
+      "he2",
+      0,
+      150,
+      1
+    ],
+    "q_laj1": [
+      "lae1",
+      0,
+      150,
+      1
+    ],
+    "q_laj2": [
+      "lae2",
+      -90,
+      150,
+      1
+    ],
+    "q_laj3": [
+      "lae3",
+      0,
+      150,
+      1
+    ],
+    "q_laj4": [
+      "lae4",
+      0,
+      150,
+      1
+    ],
+    "q_raj1": [
+      "rae1",
+      0,
+      150,
+      1
+    ],
+    "q_raj2": [
+      "rae2",
+      90,
+      150,
+      1
+    ],
+    "q_raj3": [
+      "rae3",
+      0,
+      150,
+      1
+    ],
+    "q_raj4": [
+      "rae4",
+      0,
+      150,
+      1
+    ],
+    "q_tj1": [
+      "te1",
+      0,
+      150,
+      1
+    ],
+    "q_llj1": [
+      "lle1",
+      0,
+      150,
+      1
+    ],
+    "q_llj2": [
+      "lle2",
+      0,
+      150,
+      1
+    ],
+    "q_llj3": [
+      "lle3",
+      0,
+      150,
+      1
+    ],
+    "q_llj4": [
+      "lle4",
+      0,
+      150,
+      1
+    ],
+    "q_llj5": [
+      "lle5",
+      0,
+      150,
+      1
+    ],
+    "q_llj6": [
+      "lle6",
+      0,
+      150,
+      1
+    ],
+    "q_rlj1": [
+      "rle1",
+      0,
+      150,
+      1
+    ],
+    "q_rlj2": [
+      "rle2",
+      0,
+      150,
+      1
+    ],
+    "q_rlj3": [
+      "rle3",
+      0,
+      150,
+      1
+    ],
+    "q_rlj4": [
+      "rle4",
+      0,
+      150,
+      1
+    ],
+    "q_rlj5": [
+      "rle5",
+      0,
+      150,
+      1
+    ],
+    "q_rlj6": [
+      "rle6",
+      0,
+      150,
+      1
+    ]
+  },
+  "control_reference": "T1 neutral joint convention checked against ApolloCodebase assets/keyframes/neutral.yaml; static posture only, no learned policy imported."
+}

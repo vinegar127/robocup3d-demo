@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/prathameshshaileshshinde/RCSS-Booster-Client",
+  "commit": "14a423d96bebf1f6f2a0e7f3c21ef5ae43f53c6c",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "77fb0cdb5869d28dae4523810c8962be8d9c4c31daeae78726b1ec44e093cc67",
+      "size": 4318,
+      "git_blob": "a4ec1dafcb0b168e1f0a0f527d8a96599344c3c6"
+    },
+    {
+      "path": "locomotion_nn.pth",
+      "sha256": "06457c17bf9f328045208d686fc9da1d1127934db43b6f4d1984e1a3a9727fa4",
+      "size": 1313993,
+      "git_blob": "59baf0238cbcabf49040fdbaa6f59e7085cb192e"
+    },
+    {
+      "path": "locomotion_nn_meta.json",
+      "sha256": "13ec75de840e9d4f975e8c9a3b82c4ea8db951e5529754f000a3583562873bd8",
+      "size": 895,
+      "git_blob": "dc650b1fd8065ce95041c810e74755fb1db13336"
+    },
+    {
+      "path": "nn_client.py",
+      "sha256": "861be2f15da1ac2eb5c800b9158ad402b723b8ac9b1a862dfe1fb0c03b43e383",
+      "size": 60455,
+      "git_blob": "66c5b0abaa1c547f3cd093bab31c47fdf28395d3"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f5f7c93ef1563c50385824debb8e9c7b608db1c58b749698095f97df76815a3e",
+      "size": 18,
+      "git_blob": "19532cdee83594144e57efb8d35bdcd7a2281ba3"
+    },
+    {
+      "path": "start_team.py",
+      "sha256": "c03a96f85edd67164d87d770fd38c1d639e534ec37a5c00285fbd88068378845",
+      "size": 3635,
+      "git_blob": "e58df8c6cbdc616f19a5ab41d3c22e09a89d1c86"
+    },
+    {
+      "path": "torch_policy.py",
+      "sha256": "a5d7c001919029074215f7f1908a3605e02563817467b8e92499f7578f091370",
+      "size": 7063,
+      "git_blob": "822ed67be019e9b8939e2937be683cfba732d1cf"
+    }
+  ],
+  "scope": "Upstream runtime, model and source; no tactical or model changes"
+}

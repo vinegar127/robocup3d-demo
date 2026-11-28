@@ -1,0 +1,9 @@
+{
+  "candidate": "E:\\3d\u4eff\u771f\\tmp\\candidate-self-filter",
+  "status": "experimental; not applied to default team",
+  "files": {
+    "team/world.py": "2548fc38ba548f8e020e6c07729e865fe912a6c5720e805e7c295295f24665b7",
+    "team/agent.py": "6eb794ee96db42ea301c116f8371c100a34ecd965cc14f8941060c129992f1a1",
+    "tests/test_soccer.py": "6e7ee45bd9f7936b55e8fb1f453414f255df18593e2f8c7be2aa2ea413a96eca"
+  }
+}

@@ -23,6 +23,8 @@ jobs:
           python-version: '3.12'
       - name: Check command help without third-party packages
         run: python -S code/demo_sim.py --help
+      - name: Check coordinates and kicking behavior
+        run: python -S -m unittest discover -s tests -v
       - name: Run teaching demo
         run: python -S code/demo_sim.py --cycles 1500
       - name: Run teaching benchmark

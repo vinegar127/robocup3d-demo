@@ -1,0 +1,36 @@
+name: T1 candidate checks
+
+on:
+  push:
+    paths:
+      - 'competition/**'
+      - '.github/workflows/t1-check.yml'
+  pull_request:
+    paths:
+      - 'competition/**'
+      - '.github/workflows/t1-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: competition
+    env:
+      PYTHONUTF8: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install unit-test dependencies
+        run: python -m pip install numpy==2.5.4 onnxruntime==1.22.0
+      - name: Run T1 tests
+        run: python -m unittest discover -s tests -v
+      - name: Check strategy selection entry
+        run: python -m team.launch --help

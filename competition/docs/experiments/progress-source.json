@@ -1,0 +1,10 @@
+{
+  "candidate": "E:\\3d\u4eff\u771f\\tmp\\candidate-progress",
+  "status": "experimental; not applied to default team",
+  "files": {
+    "team/strategy.py": "669fe1edcde8f7e75ee5d639458248c5f0d89334268ac61327e597e5e14d8e28",
+    "team/behavior.py": "2a6fccab3c55625055f4a0fff3e792a8848c3d97e062f19eec305da5ce783f8e",
+    "team/agent.py": "f5bac65e7e809297835abea8367095323bcaf45112755147372b76020bfd7311",
+    "tests/test_soccer.py": "7221d287597433135247936c617740dc29535b606993f6c9b016866da8f8442f"
+  }
+}

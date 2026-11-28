@@ -1,0 +1,4 @@
+# Optional: only needed to run the pinned BahiaRT benchmark client.
+-r requirements.txt
+scipy==1.18.1
+PyYAML==6.0.3
